@@ -1,0 +1,1 @@
+{"ScrollingSetup":[{"Name":"Sky","Speed":50.0},{"Name":"City","Speed":20.0},{"Name":"Grass","Speed":5.0},{"Name":"Road","Speed":2.0}],"ObstacleSetup":[{"Time":3.0,"Name":"plot","Y":-2.0},{"Time":7.0,"Name":"cat","Y":-4.0},{"Time":11.0,"Name":"oil","Y":-1.0}],"CinematicTimer":[5.5,9.5,13.5]}
