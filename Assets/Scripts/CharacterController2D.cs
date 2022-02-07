@@ -23,7 +23,6 @@ public class CharacterController2D : MonoBehaviour
 
     public bool CanControl { get => m_canControl; set => m_canControl = value; }
     public float MoveSpeed { get => m_moveSpeed; }
-    public Transform SkateAnchor { get => (m_currentSkateboard.Current as Skateboard).Placeholder; }
 
     public bool CanMove()
     {
