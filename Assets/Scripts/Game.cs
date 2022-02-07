@@ -7,7 +7,6 @@ using System.Collections;
 
 public class Game : MonoBehaviour
 {
-    private const float RESET_BUTTON_TIME = 5f;
     private const string GAME_CONFIG_FILENAME = "gamesetup.json";
 
     private static Game _instance;
@@ -17,7 +16,7 @@ public class Game : MonoBehaviour
     [SerializeField]
     private int m_targetFrameRate = 60;
     [SerializeField]
-    private List<Screen> m_screens;
+    private Screen m_screen;
     [SerializeField]
     private ScrollingBackground m_scrollingSky;
     [SerializeField]
@@ -27,10 +26,8 @@ public class Game : MonoBehaviour
     [SerializeField]
     private ScrollingBackground m_scrollingRoad;
 
-    private float m_resetButtonTime = 0;
     private bool m_isPaused;
     private float m_timer;
-    private IEnumerator m_currentScreen;
     private CharacterController2D m_characterController;
     private CinematicManager m_cinematicManager;
     private Obstacle[] m_obstacles;
@@ -51,8 +48,8 @@ public class Game : MonoBehaviour
         Application.targetFrameRate = m_targetFrameRate;
 
         _instance = this;
+        Debug.Assert(m_screen != null, "Unexpected null reference to m_screen");
         Debug.Assert(m_configFileTemplate != null, "Unexpected null reference to m_configFile");
-        Debug.Assert(m_screens != null, "Unexpected null reference to m_screens");
         m_characterController = GetComponentInChildren<CharacterController2D>();
         Debug.Assert(m_characterController != null, "Unexpected null reference to m_characterController");
         m_cinematicManager = GetComponentInChildren<CinematicManager>();
@@ -69,11 +66,13 @@ public class Game : MonoBehaviour
         m_scrollingCity.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "City").Speed;
         m_scrollingGrass.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "Grass").Speed;
         m_scrollingRoad.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "Road").Speed;
+
+        m_screen.Initialize();
     }
 
     void Start()
     {
-        m_currentScreen = m_screens.GetEnumerator();
+        m_screen.Begin();
         Reset();
     }
 
@@ -83,9 +82,7 @@ public class Game : MonoBehaviour
         if (m_isPaused)
             return;
 
-        m_resetButtonTime = Input.GetButton("Fire2") ? m_resetButtonTime + Time.deltaTime : 0;
-        if (m_resetButtonTime >= RESET_BUTTON_TIME && m_characterController.CanMove() && !m_isTimerPaused)
-            Reset();
+        m_screen.GetCurrentScreen().DoUpdate();
 
         if (!m_isTimerPaused)
             m_timer += Time.deltaTime;
@@ -132,11 +129,6 @@ public class Game : MonoBehaviour
     public void Reset()
     {
         m_timer = 0;
-        m_screens.ForEach(s => s.Reset());
-        m_currentScreen.Reset();
-        m_currentScreen.MoveNext();
-        m_characterController.Reset();
-        m_cinematicManager.Reset();
         m_cinematicsTime = new Queue<float>(m_gameSetup.CinematicTimer);
         if (m_obstacles != null)
         {
@@ -147,6 +139,7 @@ public class Game : MonoBehaviour
             m_spawningTime = new Queue<float>(m_gameSetup.ObstacleSetup.Select(o => o.Time));
         }
     }
+
     private void LoadGameSetupFile()
     {
         string filePath = Path.Combine(Application.persistentDataPath, GAME_CONFIG_FILENAME);

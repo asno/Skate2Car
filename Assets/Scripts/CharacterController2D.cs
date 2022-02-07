@@ -52,7 +52,6 @@ public class CharacterController2D : MonoBehaviour
                 Skateboard currentSkateboard = m_currentSkateboard.Current as Skateboard;
                 skateboard.gameObject.SetActive(false);
                 currentSkateboard.gameObject.SetActive(true);
-                m_rigidbody = currentSkateboard.GetComponent<Rigidbody2D>();
                 m_playerCollision = currentSkateboard.GetComponent<PlayerCollision>();
             }
         }
@@ -66,6 +65,9 @@ public class CharacterController2D : MonoBehaviour
         Debug.Assert(m_skateboards != null, "Unexpected null reference to m_skateboards");
         Debug.Assert(m_skateboards.Length > 0, "Empty container m_skateboards");
 
+        m_rigidbody = GetComponent<Rigidbody2D>();
+        Debug.Assert(m_rigidbody != null, "Unexpected null reference m_rigidbody");
+
         m_floorMask = 1 << LayerMask.NameToLayer("Floor");
         m_ceilMask = 1 << LayerMask.NameToLayer("Ceil");
         m_backMask = 1 << LayerMask.NameToLayer("Back");
@@ -75,8 +77,12 @@ public class CharacterController2D : MonoBehaviour
         m_currentSkateboard.MoveNext();
 
         var skateboard = m_currentSkateboard.Current as Skateboard;
-        m_rigidbody = skateboard.GetComponent<Rigidbody2D>();
         m_playerCollision = skateboard.GetComponent<PlayerCollision>();
+    }
+
+    private void OnEnable()
+    {
+        Reset();
     }
 
     void Update()
@@ -86,6 +92,7 @@ public class CharacterController2D : MonoBehaviour
             if (CanMove())
                 ChangeAnimationState(PlayerAction.None);
 
+            m_rigidbody.velocity = Vector2.zero;
             return;
         }
 
@@ -119,7 +126,7 @@ public class CharacterController2D : MonoBehaviour
             if (y == 0)
                 ChangeAnimationState(PlayerAction.None);
         }
-        transform.Translate(translation.normalized * m_moveSpeed * Time.deltaTime);
+        m_rigidbody.velocity = translation.normalized * m_moveSpeed * Time.deltaTime;
     }
 
     internal void Reset()
@@ -136,6 +143,7 @@ public class CharacterController2D : MonoBehaviour
             s.Reset();
         }
         m_skateboards[0].gameObject.SetActive(true);
+        m_playerCollision = m_skateboards[0].GetComponent<PlayerCollision>();
     }
 
     void ChangeAnimationState(PlayerAction aNewPlayerAction)
