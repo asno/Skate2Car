@@ -1,4 +1,4 @@
-enum PlayerAction
+public enum PlayerAction
 {
     None,
     MoveUp,

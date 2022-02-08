@@ -1,11 +1,7 @@
 using System;
 
-public class GameConfigurator
-{
-}
-
 [Serializable]
-public class ScrollingSetup
+public class ScrollingPlan
 {
     public string Name;
     public float Speed;
@@ -22,7 +18,7 @@ public class ObstacleSetup
 [Serializable]
 public class GameSetup
 {
-    public ScrollingSetup[] ScrollingSetup;
-    public ObstacleSetup[] ObstacleSetup;
+    public ScrollingPlan[] @ScrollingPlan;
+    public ObstacleSetup[] @ObstacleSetup;
     public float[] CinematicTimer;
 }

@@ -3,7 +3,7 @@ using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Collections;
+using UnityEditor;
 
 public class Game : MonoBehaviour
 {
@@ -15,6 +15,7 @@ public class Game : MonoBehaviour
     private TextAsset m_configFileTemplate;
     [SerializeField]
     private int m_targetFrameRate = 60;
+    [LabelOverride("First Screen")]
     [SerializeField]
     private Screen m_screen;
     [SerializeField]
@@ -28,7 +29,7 @@ public class Game : MonoBehaviour
 
     private bool m_isPaused;
     private float m_timer;
-    private CharacterController2D m_characterController;
+    private CharacterManager m_characterManager;
     private CinematicManager m_cinematicManager;
     private Obstacle[] m_obstacles;
     private Queue<Obstacle> m_obstaclesQueue;
@@ -42,6 +43,7 @@ public class Game : MonoBehaviour
 
     public float Timer { get => m_timer; }
     public bool IsTimerPaused { get => m_isTimerPaused; set => m_isTimerPaused = value; }
+    public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
 
     void Awake()
     {
@@ -50,8 +52,8 @@ public class Game : MonoBehaviour
         _instance = this;
         Debug.Assert(m_screen != null, "Unexpected null reference to m_screen");
         Debug.Assert(m_configFileTemplate != null, "Unexpected null reference to m_configFile");
-        m_characterController = GetComponentInChildren<CharacterController2D>();
-        Debug.Assert(m_characterController != null, "Unexpected null reference to m_characterController");
+        m_characterManager = GetComponent<CharacterManager>();
+        Debug.Assert(m_characterManager != null, "Unexpected null reference to m_characterManager");
         m_cinematicManager = GetComponentInChildren<CinematicManager>();
         Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
         Debug.Assert(m_scrollingSky != null, "Unexpected null reference to m_scrollingSky");
@@ -62,10 +64,10 @@ public class Game : MonoBehaviour
 
         LoadGameSetupFile();
 
-        m_scrollingSky.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "Sky").Speed;
-        m_scrollingCity.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "City").Speed;
-        m_scrollingGrass.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "Grass").Speed;
-        m_scrollingRoad.Speed = 1.0f / m_gameSetup.ScrollingSetup.FirstOrDefault(s => s.Name == "Road").Speed;
+        m_scrollingSky.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Sky").Speed;
+        m_scrollingCity.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "City").Speed;
+        m_scrollingGrass.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Grass").Speed;
+        m_scrollingRoad.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Road").Speed;
 
         m_screen.Initialize();
     }

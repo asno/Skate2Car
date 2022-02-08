@@ -9,8 +9,6 @@ public class GameScreen : Screen
     [SerializeField]
     private ScrollingBackground[] m_scrollingBackgrounds;
     [SerializeField]
-    private CharacterController2D m_characterController;
-    [SerializeField]
     private CinematicManager m_cinematicManager;
 
     private float m_resetButtonTime = 0;
@@ -19,7 +17,6 @@ public class GameScreen : Screen
     {
         Debug.Assert(m_level != null, "Unexpected null reference to m_level");
         Debug.Assert(m_scrollingBackgrounds != null, "Unexpected null reference to m_scrollingBackgrounds");
-        Debug.Assert(m_characterController != null, "Unexpected null reference to m_characterController");
         Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
     }
 
@@ -32,8 +29,8 @@ public class GameScreen : Screen
 
         m_level.SetActive(false);
 
-        m_characterController.CanControl = false;
-        m_characterController.gameObject.SetActive(false);
+        m_game.CharacterController.CanControl = false;
+        m_game.CharacterController.gameObject.SetActive(false);
 
         m_cinematicManager.gameObject.SetActive(false);
     }
@@ -45,8 +42,8 @@ public class GameScreen : Screen
 
         m_level.SetActive(false);
 
-        m_characterController.CanControl = false;
-        m_characterController.gameObject.SetActive(false);
+        m_game.CharacterController.CanControl = false;
+        m_game.CharacterController.gameObject.SetActive(false);
 
         m_cinematicManager.gameObject.SetActive(false);
     }
@@ -58,8 +55,8 @@ public class GameScreen : Screen
         foreach (var scrolling in m_scrollingBackgrounds)
             scrolling.IsPaused = false;
 
-        m_characterController.gameObject.SetActive(true);
-        m_characterController.CanControl = true;
+        m_game.CharacterController.gameObject.SetActive(true);
+        m_game.CharacterController.CanControl = true;
 
         m_cinematicManager.gameObject.SetActive(true);
         m_game.IsTimerPaused = false;
@@ -75,14 +72,14 @@ public class GameScreen : Screen
     public override void DoUpdate()
     {
         m_resetButtonTime = Input.GetButton("Fire2") ? m_resetButtonTime + Time.deltaTime : 0;
-        if (m_resetButtonTime >= RESET_BUTTON_TIME && m_characterController.CanMove() && !m_game.IsTimerPaused)
+        if (m_resetButtonTime >= RESET_BUTTON_TIME && m_game.CharacterController.CanMove() && !m_game.IsTimerPaused)
             Reset();
     }
 
     public override void Reset()
     {
         m_game.Reset();
-        m_characterController.Reset();
+        m_game.CharacterController.Reset();
         m_cinematicManager.Reset();
     }
 }

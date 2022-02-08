@@ -1,10 +1,7 @@
 using UnityEngine;
 
-public class PlayerCollision : MonoBehaviour
+public class SkateCollision : CharacterCollision
 {
-    [SerializeField]
-    private CharacterController2D m_characterController2D;
-    private BoxCollider2D m_collider;
     private bool m_isJumping = false;
     public bool IsJumping
     {
@@ -23,17 +20,13 @@ public class PlayerCollision : MonoBehaviour
         }
     }
 
-    void Start()
-    {
-        m_collider = GetComponent<BoxCollider2D>();
-    }
 
     private void OnTriggerEnter2D(Collider2D aCollision)
     {
         if(aCollision.CompareTag("Obstacle"))
         {
             aCollision.GetComponent<Obstacle>()?.Hit();
-            m_characterController2D.GetHitByObstacle();
+            m_characterController.GetHitByObstacle();
             m_isShaking = true;
         }
     }
@@ -56,7 +49,6 @@ public class PlayerCollision : MonoBehaviour
     void OnJumpStop()
     {
         m_isJumping = false;
-        m_characterController2D.KeepRolling();
     }
 
     void OnShakingStart()
@@ -69,6 +61,5 @@ public class PlayerCollision : MonoBehaviour
     void OnShakingStop()
     {
         m_isShaking = false;
-        m_characterController2D.KeepRolling();
     }
 }

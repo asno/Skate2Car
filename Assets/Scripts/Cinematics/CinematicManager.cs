@@ -1,5 +1,3 @@
-using System;
-using System.Linq;
 using System.Collections;
 using UnityEngine;
 
@@ -9,10 +7,8 @@ public class CinematicManager : MonoBehaviour
 
     [SerializeField]
     private Cinematic[] m_cinematics;
-    [SerializeField]
-    private CharacterController2D m_characterController;
 
-    private IEnumerator m_currentCinematic;
+    private IEnumerator m_cinematicIterator;
     private Coroutine m_currentCinematicProcess;
     private Game m_game;
 
@@ -25,31 +21,28 @@ public class CinematicManager : MonoBehaviour
         Debug.Assert(m_cinematics != null, "Unexpected null reference to m_cinematics");
         Debug.Assert(m_cinematics.Length > 0, "Empty container m_cinematics");
 
-        m_currentCinematic = m_cinematics.GetEnumerator();
-    }
-
-    private void OnEnable()
-    {
-        Reset();
+        m_cinematicIterator = m_cinematics.GetEnumerator();
     }
 
     void Start()
     {
         m_game = Game.Instance;
         Debug.Assert(m_game != null, "Unexpected null reference to m_game");
+
+        Reset();
     }
 
     public void Reset()
     {
-        m_currentCinematic.Reset();
+        m_cinematicIterator.Reset();
     }
 
     public void StartNextCinematic()
     {
-        if (!m_currentCinematic.MoveNext())
+        if (!m_cinematicIterator.MoveNext())
             return;
 
-        m_characterController.CanControl = false;
+        m_game.CharacterController.CanControl = false;
         m_game.IsTimerPaused = true;
 
         if (m_currentCinematicProcess != null)
@@ -60,10 +53,10 @@ public class CinematicManager : MonoBehaviour
 
     private IEnumerator PlayingCinematic()
     {
-        while (!m_characterController.CanMove())
+        while (!m_game.CharacterController.CanMove())
             yield return null;
 
-        Cinematic cinematic = m_currentCinematic.Current as Cinematic;
+        Cinematic cinematic = m_cinematicIterator.Current as Cinematic;
         cinematic.Play();
         while(cinematic.IsPlaying)
             yield return null;
@@ -73,8 +66,7 @@ public class CinematicManager : MonoBehaviour
 
     private void ResumeGame()
     {
-        m_characterController.SwitchToNextState();
-        m_characterController.CanControl = true;
+        m_game.CharacterController.CanControl = true;
         m_game.IsTimerPaused = false;
     }
 }
