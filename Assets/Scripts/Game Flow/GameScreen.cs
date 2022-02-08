@@ -7,8 +7,6 @@ public class GameScreen : Screen
     [SerializeField]
     private GameObject m_level;
     [SerializeField]
-    private ScrollingBackground[] m_scrollingBackgrounds;
-    [SerializeField]
     private CinematicManager m_cinematicManager;
 
     private float m_resetButtonTime = 0;
@@ -16,7 +14,6 @@ public class GameScreen : Screen
     void Awake()
     {
         Debug.Assert(m_level != null, "Unexpected null reference to m_level");
-        Debug.Assert(m_scrollingBackgrounds != null, "Unexpected null reference to m_scrollingBackgrounds");
         Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
     }
 
@@ -24,8 +21,7 @@ public class GameScreen : Screen
     {
         base.Initialize();
         m_game.IsTimerPaused = true;
-        foreach (var scrolling in m_scrollingBackgrounds)
-            scrolling.IsPaused = true;
+        m_game.Decor.PauseScrolling();
 
         m_level.SetActive(false);
 
@@ -37,8 +33,7 @@ public class GameScreen : Screen
 
     protected override void Deactivate()
     {
-        foreach (var scrolling in m_scrollingBackgrounds)
-            scrolling.IsPaused = true;
+        m_game.Decor.PauseScrolling();
 
         m_level.SetActive(false);
 
@@ -52,8 +47,7 @@ public class GameScreen : Screen
     {
         m_level.SetActive(true);
 
-        foreach (var scrolling in m_scrollingBackgrounds)
-            scrolling.IsPaused = false;
+        m_game.Decor.ResumeScrolling();
 
         m_game.CharacterController.gameObject.SetActive(true);
         m_game.CharacterController.CanControl = true;

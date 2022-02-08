@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a3dc56d1ca095448933d6dd089fc9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterController2D: {fileID: 5467537093420517312}
+  m_characterController: {fileID: 5467537093420517312}
 --- !u!61 &5439563396511031535
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -539,6 +539,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5602414425027964352}
+  - component: {fileID: 237171709}
+  - component: {fileID: 237171708}
   m_Layer: 0
   m_Name: Car Controller
   m_TagString: Untagged
@@ -554,13 +556,47 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5602414425027964367}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.47, y: -3.48, z: 0}
+  m_LocalPosition: {x: -18.19, y: -2.97, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5602414426647850204}
   m_Father: {fileID: 8376897231356473902}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &237171709
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602414425027964367}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!114 &237171708
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5602414425027964367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 06a115ac8b6879a4aa0a5c28b62704d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_moveSpeed: 400
 --- !u!1 &5602414426647850203
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,7 +609,7 @@ GameObject:
   - component: {fileID: 5602414426647850192}
   - component: {fileID: 5602414426647850207}
   - component: {fileID: 5602414426647850206}
-  - component: {fileID: 5602414426647850205}
+  - component: {fileID: 1010075739}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -589,7 +625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5602414426647850203}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 32.26, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5602414425027964352}
@@ -634,7 +670,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 3
   m_Sprite: {fileID: -544586960509910921, guid: c80aa2955380aa345a096e8072cefb33, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -691,7 +727,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 8.393939, y: 1.5757575}
   m_EdgeRadius: 0
---- !u!114 &5602414426647850205
+--- !u!114 &1010075739
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -700,10 +736,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 5602414426647850203}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20a3dc56d1ca095448933d6dd089fc9b, type: 3}
+  m_Script: {fileID: 11500000, guid: ed99ddddad0efee4fa01e447ef7db537, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterController2D: {fileID: 0}
+  m_characterController: {fileID: 0}
 --- !u!1 &7333115448043041962
 GameObject:
   m_ObjectHideFlags: 0
@@ -972,7 +1008,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a3dc56d1ca095448933d6dd089fc9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterController2D: {fileID: 5467537093420517312}
+  m_characterController: {fileID: 5467537093420517312}
 --- !u!61 &8376897230720074136
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1382,7 +1418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a3dc56d1ca095448933d6dd089fc9b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_characterController2D: {fileID: 5467537093420517312}
+  m_characterController: {fileID: 5467537093420517312}
 --- !u!114 &8376897231751869045
 MonoBehaviour:
   m_ObjectHideFlags: 0

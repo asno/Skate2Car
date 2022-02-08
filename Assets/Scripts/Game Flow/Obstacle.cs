@@ -29,6 +29,7 @@ public class Obstacle : MonoBehaviour
         m_collider = GetComponent<Collider2D>();
         Debug.Assert(m_collider != null, "Unexpected null reference to m_collider");
         m_animator = GetComponent<Animator>();
+        gameObject.SetActive(false);
     }
 
     private void Start()
@@ -44,7 +45,7 @@ public class Obstacle : MonoBehaviour
             m_animator.Play("Hit");
     }
 
-    void LateUpdate()
+    void Update()
     {
         if (!m_isFlat)
             m_spriteRenderer.sortingOrder = m_playerTransform.position.y < m_colliderBottomY ? 2 : 5;
@@ -67,6 +68,8 @@ public class Obstacle : MonoBehaviour
             m_animator.Play("Idle");
         m_isScrolling = false;
         transform.position = m_initialPosition;
+        gameObject.SetActive(false);
+
     }
 
     public void StartScrolling(float aScrollingSpeed)

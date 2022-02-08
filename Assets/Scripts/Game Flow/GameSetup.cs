@@ -1,10 +1,12 @@
 using System;
 
 [Serializable]
-public class ScrollingPlan
+public class ScrollingSetup
 {
-    public string Name;
-    public float Speed;
+    public float Sky;
+    public float Backdrop;
+    public float Border;
+    public float Road;
 }
 
 [Serializable]
@@ -18,7 +20,7 @@ public class ObstacleSetup
 [Serializable]
 public class GameSetup
 {
-    public ScrollingPlan[] @ScrollingPlan;
+    public ScrollingSetup @ScrollingSetup;
     public ObstacleSetup[] @ObstacleSetup;
     public float[] CinematicTimer;
 }

@@ -23,6 +23,9 @@ public class CharacterManager : MonoBehaviour
         Debug.Assert(m_characterControllers != null, "Unexpected null reference to m_characterControllers");
         Debug.Assert(m_characterControllers.Length > 0, "Empty container m_characterControllers");
 
+        foreach (CharacterController2D controller in m_characterControllers)
+            controller.gameObject.SetActive(false);
+
         InitIfNull();
     }
 
@@ -44,6 +47,10 @@ public class CharacterManager : MonoBehaviour
     public void PickNextCharacterController()
     {
         if (m_characterControllerIterator.MoveNext())
+        {
+            m_currentCharacterController?.gameObject.SetActive(false);
             m_currentCharacterController = m_characterControllerIterator.Current as CharacterController2D;
+            m_currentCharacterController.gameObject.SetActive(true);
+        }
     }
 }

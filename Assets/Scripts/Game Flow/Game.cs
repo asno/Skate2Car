@@ -18,17 +18,11 @@ public class Game : MonoBehaviour
     [LabelOverride("First Screen")]
     [SerializeField]
     private Screen m_screen;
-    [SerializeField]
-    private ScrollingBackground m_scrollingSky;
-    [SerializeField]
-    private ScrollingBackground m_scrollingCity;
-    [SerializeField]
-    private ScrollingBackground m_scrollingGrass;
-    [SerializeField]
-    private ScrollingBackground m_scrollingRoad;
 
     private bool m_isPaused;
     private float m_timer;
+    private float m_scrollingSpeed;
+    private DecorManager m_decorManager;
     private CharacterManager m_characterManager;
     private CinematicManager m_cinematicManager;
     private Obstacle[] m_obstacles;
@@ -44,6 +38,7 @@ public class Game : MonoBehaviour
     public float Timer { get => m_timer; }
     public bool IsTimerPaused { get => m_isTimerPaused; set => m_isTimerPaused = value; }
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
+    public Decor @Decor { get => m_decorManager.CurrentDecor; }
 
     void Awake()
     {
@@ -52,30 +47,26 @@ public class Game : MonoBehaviour
         _instance = this;
         Debug.Assert(m_screen != null, "Unexpected null reference to m_screen");
         Debug.Assert(m_configFileTemplate != null, "Unexpected null reference to m_configFile");
+        m_decorManager = GetComponentInChildren<DecorManager>();
+        Debug.Assert(m_decorManager != null, "Unexpected null reference to m_decorManager");
         m_characterManager = GetComponent<CharacterManager>();
         Debug.Assert(m_characterManager != null, "Unexpected null reference to m_characterManager");
         m_cinematicManager = GetComponentInChildren<CinematicManager>();
         Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
-        Debug.Assert(m_scrollingSky != null, "Unexpected null reference to m_scrollingSky");
-        Debug.Assert(m_scrollingCity != null, "Unexpected null reference to m_scrollingCity");
-        Debug.Assert(m_scrollingGrass != null, "Unexpected null reference to m_scrollingGrass");
-        Debug.Assert(m_scrollingRoad != null, "Unexpected null reference to m_scrollingRoad");
-        m_obstacles = GetComponentsInChildren<Obstacle>();
+        m_obstacles = GetComponentsInChildren<Obstacle>(true);
 
         LoadGameSetupFile();
 
-        m_scrollingSky.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Sky").Speed;
-        m_scrollingCity.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "City").Speed;
-        m_scrollingGrass.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Grass").Speed;
-        m_scrollingRoad.Speed = 1.0f / m_gameSetup.ScrollingPlan.FirstOrDefault(s => s.Name == "Road").Speed;
+        m_scrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
+        m_decorManager.Initialize(m_gameSetup.ScrollingSetup);
 
         m_screen.Initialize();
+        InitializeQueues();
     }
 
     void Start()
     {
         m_screen.Begin();
-        Reset();
     }
 
 
@@ -96,16 +87,19 @@ public class Game : MonoBehaviour
                 m_spawningTime.Dequeue();
                 var bid = m_spawningBid.Dequeue();
                 Obstacle obstacle = m_obstaclesQueue.Dequeue();
+                obstacle.gameObject.SetActive(true);
                 while (!obstacle.transform.name.Contains(bid.Item1))
                 {
+                    obstacle.gameObject.SetActive(false);
                     m_obstaclesQueue.Enqueue(obstacle);
                     obstacle = m_obstaclesQueue.Dequeue();
+                    obstacle.gameObject.SetActive(true);
                 }
                 m_obstaclesQueue.Enqueue(obstacle);
                 var pos = obstacle.transform.position;
                 pos.y = bid.Item2;
                 obstacle.transform.position = pos;
-                obstacle.StartScrolling(m_scrollingRoad.Speed);
+                obstacle.StartScrolling(m_scrollingSpeed);
             }
         }
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
@@ -131,15 +125,29 @@ public class Game : MonoBehaviour
     public void Reset()
     {
         m_timer = 0;
+
+        InitializeQueues();
+        foreach (var o in m_obstacles)
+            o.Reset();
+        m_characterManager.Reset();
+        m_decorManager.Reset();
+    }
+
+    private void InitializeQueues()
+    {
         m_cinematicsTime = new Queue<float>(m_gameSetup.CinematicTimer);
         if (m_obstacles != null)
         {
-            foreach (var o in m_obstacles)
-                o.Reset();
             m_obstaclesQueue = new Queue<Obstacle>(m_obstacles);
             m_spawningBid = new Queue<Tuple<string, float>>(m_gameSetup.ObstacleSetup.Select(o => new Tuple<string, float>(o.Name, Mathf.Clamp(o.Y, -5, -2))));
             m_spawningTime = new Queue<float>(m_gameSetup.ObstacleSetup.Select(o => o.Time));
         }
+    }
+
+    public void ContinueToNextStage()
+    {
+        m_decorManager.PickNextDecor();
+        m_characterManager.PickNextCharacterController();
     }
 
     private void LoadGameSetupFile()
@@ -169,5 +177,12 @@ public class Game : MonoBehaviour
             //File.WriteAllText(filePath, json);
         }
         m_gameSetup = FileHandler.ReadFromJSON<GameSetup>(GAME_CONFIG_FILENAME);
+
+        Array.Sort(m_gameSetup.ObstacleSetup, delegate (ObstacleSetup o1, ObstacleSetup o2) {
+            return o1.Time.CompareTo(o2.Time);
+        });
+        Array.Sort(m_gameSetup.CinematicTimer, delegate (float t1, float t2) {
+            return t1.CompareTo(t2);
+        });
     }
 }
