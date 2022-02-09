@@ -525,7 +525,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa98477d9be93f24581d46065f860661, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 400
+  m_moveSpeed: 200
   m_skateboards:
   - {fileID: 8376897231751869045}
   - {fileID: 8376897230720074134}
@@ -596,7 +596,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 06a115ac8b6879a4aa0a5c28b62704d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_moveSpeed: 400
+  m_moveSpeed: 200
 --- !u!1 &5602414426647850203
 GameObject:
   m_ObjectHideFlags: 0

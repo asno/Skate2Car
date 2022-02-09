@@ -17,7 +17,6 @@ public class TitleScreen : Screen
     protected override void Deactivate()
     {
         m_titleScreenAnimator.gameObject.SetActive(false);
-        m_titleScreenAnimator.enabled = false;
         m_canPressToSkip = false;
     }
 
@@ -25,7 +24,6 @@ public class TitleScreen : Screen
     {
         m_isSkipped = false;
         m_titleScreenAnimator.gameObject.SetActive(true);
-        m_titleScreenAnimator.enabled = true;
         StartCoroutine(Play());
     }
 
@@ -55,9 +53,7 @@ public class TitleScreen : Screen
     private IEnumerator Play()
     {
         m_titleScreenAnimator.Play("ShowUp");
-        while (m_titleScreenAnimator.GetCurrentAnimatorStateInfo(0).normalizedTime < 1)
-            yield return null;
-
+        yield return new WaitForSeconds(m_titleScreenAnimator.GetCurrentAnimatorStateInfo(0).length);
         m_canPressToSkip = true;
     }
 }
