@@ -5,75 +5,62 @@ public class GameScreen : Screen
     private const float RESET_BUTTON_TIME = 5f;
 
     [SerializeField]
-    private GameObject m_level;
-    [SerializeField]
-    private CinematicManager m_cinematicManager;
+    private float m_playTime = 150;
 
+    private bool m_canReset = true;
     private float m_resetButtonTime = 0;
 
-    void Awake()
-    {
-        Debug.Assert(m_level != null, "Unexpected null reference to m_level");
-        Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
-    }
 
     public override void Initialize()
     {
         base.Initialize();
-        m_game.IsTimerPaused = true;
-        m_game.Decor.PauseScrolling();
-
-        m_level.SetActive(false);
-
-        m_game.CharacterController.CanControl = false;
-        m_game.CharacterController.gameObject.SetActive(false);
-
-        m_cinematicManager.gameObject.SetActive(false);
+        Deactivate();
     }
 
     protected override void Deactivate()
     {
-        m_game.Decor.PauseScrolling();
-
-        m_level.SetActive(false);
-
-        m_game.CharacterController.CanControl = false;
-        m_game.CharacterController.gameObject.SetActive(false);
-
-        m_cinematicManager.gameObject.SetActive(false);
+        m_game.StopGame();
     }
 
     public override void Begin()
     {
-        m_level.SetActive(true);
-
-        m_game.Decor.ResumeScrolling();
+        m_isSkipped = false;
+        DecorManager.Instance.CurrentDecor.ResumeScrolling();
 
         m_game.CharacterController.gameObject.SetActive(true);
         m_game.CharacterController.CanControl = true;
+        DecorManager.Instance.gameObject.SetActive(true);
+        CinematicManager.Instance.gameObject.SetActive(true);
 
-        m_cinematicManager.gameObject.SetActive(true);
-        m_game.IsTimerPaused = false;
+        m_game.Reset();
     }
 
     protected override void Exit()
     {
         base.Exit();
-        Reset();
-        Deactivate();
+        m_isSkipped = true;
+        m_game.CharacterController.CanControl = false;
+        Timer.Instance.Pause();
     }
 
     public override void DoUpdate()
     {
+        if (Timer.Instance.Time >= m_playTime)
+            Exit();
+
         m_resetButtonTime = Input.GetButton("Fire2") ? m_resetButtonTime + Time.deltaTime : 0;
-        if (m_resetButtonTime >= RESET_BUTTON_TIME && m_game.CharacterController.CanMove() && !m_game.IsTimerPaused)
-            Reset();
+        if (m_canReset)
+        {
+            if (m_resetButtonTime >= RESET_BUTTON_TIME && m_game.CharacterController.CanMove() && !Timer.Instance.IsPaused)
+                Reset();
+        }
+        else
+            m_canReset = Input.GetButtonUp("Fire2");
     }
 
     public override void Reset()
     {
         m_game.Reset();
-        m_game.CharacterController.Reset();
-        m_cinematicManager.Reset();
+        m_canReset = false;
     }
 }

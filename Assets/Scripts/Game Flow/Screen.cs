@@ -6,6 +6,7 @@ public abstract class Screen : MonoBehaviour
     protected Screen m_nextScreen;
 
     protected Game m_game;
+    protected bool m_isInitialized = false;
     protected bool m_isSkipped;
 
     public bool IsSkipped { get => m_isSkipped; }
@@ -17,12 +18,15 @@ public abstract class Screen : MonoBehaviour
 
     public virtual void Initialize()
     {
+        if (m_nextScreen != null && !m_isInitialized)
+        {
+            m_isInitialized = true;
+            m_nextScreen.Initialize();
+        }
         m_game = Game.Instance;
         Debug.Assert(m_game != null, "Unexpected null reference to m_game");
 
         m_isSkipped = false;
-        if (m_nextScreen != null)
-            m_nextScreen.Initialize();
     }
 
     protected virtual void Deactivate()

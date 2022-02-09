@@ -42,6 +42,7 @@ public abstract class CharacterController2D : MonoBehaviour
     protected virtual void Awake()
     {
         m_initialPosition = transform.position;
+
         Debug.Assert(m_moveSpeed > 0, "Zero or negative m_moveSpeed");
 
         m_rigidbody = GetComponent<Rigidbody2D>();

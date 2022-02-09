@@ -10,6 +10,7 @@ public class InfoDisplay : MonoBehaviour
     private Text m_score;
     [SerializeField]
     private Text m_fps;
+    private Score m_scoreInstance;
 
     private Game m_game;
     private readonly string TIMER = "Timer: {0}";
@@ -19,8 +20,10 @@ public class InfoDisplay : MonoBehaviour
     void Awake()
     {
         Debug.Assert(m_timer != null, "Unexpected null reference to m_timer");
-        Debug.Assert(m_score != null, "Unexpected null reference to m_score");
         Debug.Assert(m_fps != null, "Unexpected null reference to m_fps");
+
+        m_scoreInstance = Score.Instance;
+        Debug.Assert(m_scoreInstance != null, "Unexpected null reference to m_score");
 
         InvokeRepeating(nameof(GetFPS), 1, 1);
     }
@@ -33,9 +36,9 @@ public class InfoDisplay : MonoBehaviour
 
     void Update()
     {
-        TimeSpan time = TimeSpan.FromSeconds(m_game.Timer);
+        TimeSpan time = TimeSpan.FromSeconds(Timer.Instance.Time);
         m_timer.text = string.Format(TIMER, time.ToString("hh':'mm':'ss"));
-        m_score.text = string.Format(SCORE, 0);
+        m_score.text = string.Format(SCORE, m_scoreInstance.Points);
     }
 
     private void GetFPS()

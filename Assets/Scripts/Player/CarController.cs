@@ -25,6 +25,11 @@ public class CarController : CharacterController2D
 
     void Start()
     {
+        Reset();
+    }
+
+    public override void Reset()
+    {
         transform.position = m_initialPosition;
         CanControl = true;
     }

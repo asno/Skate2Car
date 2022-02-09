@@ -14,13 +14,13 @@ public class SplashScreen : Screen
 
     protected override void Deactivate()
     {
-        m_game.IsTimerPaused = true;
         m_splashScreenAnimator.gameObject.SetActive(false);
         m_splashScreenAnimator.enabled = false;
     }
 
     public override void Begin()
     {
+        m_isSkipped = false;
         m_splashScreenAnimator.gameObject.SetActive(true);
         m_splashScreenAnimator.enabled = true;
         StartCoroutine(Play());

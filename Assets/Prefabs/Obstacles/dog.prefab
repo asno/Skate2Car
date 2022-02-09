@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2600648203890114618}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 10.98, y: -3.34, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spriteSliceWidthInPixel: 70
   m_isFlat: 0
+  m_penaltyScorePoints: -1500
   m_playerTransform: {fileID: 0}
 --- !u!61 &8692558036520061443
 BoxCollider2D:

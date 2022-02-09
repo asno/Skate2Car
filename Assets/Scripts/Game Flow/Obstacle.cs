@@ -7,6 +7,8 @@ public class Obstacle : MonoBehaviour
     [SerializeField]
     private bool m_isFlat;
     [SerializeField]
+    private int m_penaltyScorePoints;
+    [SerializeField]
     private Transform m_playerTransform;
     private Vector3 m_initialPosition;
     private SpriteRenderer m_spriteRenderer;
@@ -43,6 +45,8 @@ public class Obstacle : MonoBehaviour
     {
         if (m_animator != null)
             m_animator.Play("Hit");
+
+        Score.Instance.Sum(m_penaltyScorePoints);
     }
 
     void Update()

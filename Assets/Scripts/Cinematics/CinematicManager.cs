@@ -12,12 +12,10 @@ public class CinematicManager : MonoBehaviour
     private Coroutine m_currentCinematicProcess;
     private Game m_game;
 
-    public static CinematicManager Instance { get => _instance; }
+    public static CinematicManager Instance { get => _instance ??= FindObjectOfType<CinematicManager>(); }
 
     void Awake()
     {
-        _instance = this;
-
         Debug.Assert(m_cinematics != null, "Unexpected null reference to m_cinematics");
         Debug.Assert(m_cinematics.Length > 0, "Empty container m_cinematics");
 
@@ -43,7 +41,7 @@ public class CinematicManager : MonoBehaviour
             return;
 
         m_game.CharacterController.CanControl = false;
-        m_game.IsTimerPaused = true;
+        Timer.Instance.Pause();
 
         if (m_currentCinematicProcess != null)
             StopCoroutine(m_currentCinematicProcess);
@@ -67,6 +65,6 @@ public class CinematicManager : MonoBehaviour
     private void ResumeGame()
     {
         m_game.CharacterController.CanControl = true;
-        m_game.IsTimerPaused = false;
+        Timer.Instance.Resume();
     }
 }

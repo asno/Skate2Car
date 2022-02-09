@@ -27,7 +27,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8524153776900307438}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 12.417, y: -2.5, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -144,4 +144,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spriteSliceWidthInPixel: 115
   m_isFlat: 0
+  m_penaltyScorePoints: -1500
   m_playerTransform: {fileID: 0}

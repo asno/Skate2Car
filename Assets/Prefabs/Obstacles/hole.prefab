@@ -118,6 +118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spriteSliceWidthInPixel: 100
   m_isFlat: 1
+  m_penaltyScorePoints: -2000
   m_playerTransform: {fileID: 0}
 --- !u!61 &8615994154424750091
 BoxCollider2D:

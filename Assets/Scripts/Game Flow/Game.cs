@@ -3,7 +3,6 @@ using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
 
 public class Game : MonoBehaviour
 {
@@ -20,25 +19,19 @@ public class Game : MonoBehaviour
     private Screen m_screen;
 
     private bool m_isPaused;
-    private float m_timer;
     private float m_scrollingSpeed;
-    private DecorManager m_decorManager;
     private CharacterManager m_characterManager;
-    private CinematicManager m_cinematicManager;
     private Obstacle[] m_obstacles;
     private Queue<Obstacle> m_obstaclesQueue;
     private Queue<Tuple<string, float>> m_spawningBid;
     private Queue<float> m_spawningTime;
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
-    private bool m_isTimerPaused = true;
+    private Timer m_timerInstance;
 
     public static Game Instance { get => _instance;}
 
-    public float Timer { get => m_timer; }
-    public bool IsTimerPaused { get => m_isTimerPaused; set => m_isTimerPaused = value; }
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
-    public Decor @Decor { get => m_decorManager.CurrentDecor; }
 
     void Awake()
     {
@@ -47,19 +40,16 @@ public class Game : MonoBehaviour
         _instance = this;
         Debug.Assert(m_screen != null, "Unexpected null reference to m_screen");
         Debug.Assert(m_configFileTemplate != null, "Unexpected null reference to m_configFile");
-        m_decorManager = GetComponentInChildren<DecorManager>();
-        Debug.Assert(m_decorManager != null, "Unexpected null reference to m_decorManager");
         m_characterManager = GetComponent<CharacterManager>();
         Debug.Assert(m_characterManager != null, "Unexpected null reference to m_characterManager");
-        m_cinematicManager = GetComponentInChildren<CinematicManager>();
-        Debug.Assert(m_cinematicManager != null, "Unexpected null reference to m_cinematicManager");
         m_obstacles = GetComponentsInChildren<Obstacle>(true);
 
         LoadGameSetupFile();
 
         m_scrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
-        m_decorManager.Initialize(m_gameSetup.ScrollingSetup);
+        DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup);
 
+        m_timerInstance = Timer.Instance;
         m_screen.Initialize();
         InitializeQueues();
     }
@@ -77,12 +67,9 @@ public class Game : MonoBehaviour
 
         m_screen.GetCurrentScreen().DoUpdate();
 
-        if (!m_isTimerPaused)
-            m_timer += Time.deltaTime;
-
         if (m_spawningTime != null && m_spawningTime.Count > 0)
         {
-            if (m_spawningTime.First() <= m_timer)
+            if (m_spawningTime.First() <= m_timerInstance.Time)
             {
                 m_spawningTime.Dequeue();
                 var bid = m_spawningBid.Dequeue();
@@ -104,10 +91,10 @@ public class Game : MonoBehaviour
         }
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
         {
-            if (m_cinematicsTime.First() <= m_timer)
+            if (m_cinematicsTime.First() <= m_timerInstance.Time)
             {
                 m_cinematicsTime.Dequeue();
-                m_cinematicManager.StartNextCinematic();
+                CinematicManager.Instance.StartNextCinematic();
             }
         }
     }
@@ -124,13 +111,15 @@ public class Game : MonoBehaviour
 
     public void Reset()
     {
-        m_timer = 0;
+        m_timerInstance.Restart();
 
         InitializeQueues();
         foreach (var o in m_obstacles)
             o.Reset();
         m_characterManager.Reset();
-        m_decorManager.Reset();
+        Score.Instance.Reset();
+        DecorManager.Instance.Reset();
+        CinematicManager.Instance.Reset();
     }
 
     private void InitializeQueues()
@@ -143,10 +132,18 @@ public class Game : MonoBehaviour
             m_spawningTime = new Queue<float>(m_gameSetup.ObstacleSetup.Select(o => o.Time));
         }
     }
+    public void StopGame()
+    {
+        DecorManager.Instance.CurrentDecor.PauseScrolling();
+        DecorManager.Instance.gameObject.SetActive(false);
+        CinematicManager.Instance.gameObject.SetActive(false);
+        CharacterController.CanControl = false;
+        CharacterController.gameObject.SetActive(false);
+    }
 
     public void ContinueToNextStage()
     {
-        m_decorManager.PickNextDecor();
+        DecorManager.Instance.PickNextDecor();
         m_characterManager.PickNextCharacterController();
     }
 

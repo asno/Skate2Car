@@ -23,6 +23,7 @@ public class TitleScreen : Screen
 
     public override void Begin()
     {
+        m_isSkipped = false;
         m_titleScreenAnimator.gameObject.SetActive(true);
         m_titleScreenAnimator.enabled = true;
         StartCoroutine(Play());

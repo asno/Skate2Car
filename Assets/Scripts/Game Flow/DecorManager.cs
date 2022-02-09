@@ -4,11 +4,16 @@ using UnityEngine;
 
 public class DecorManager : MonoBehaviour
 {
+    private static DecorManager _instance;
+
     [SerializeField]
     private Decor[] m_decors;
 
     private IEnumerator m_decorIterator;
     private Decor m_currentDecor;
+
+    public static DecorManager Instance { get => _instance ??= FindObjectOfType<DecorManager>(); }
+
 
     public Decor CurrentDecor
     {
@@ -56,6 +61,7 @@ public class DecorManager : MonoBehaviour
             m_currentDecor?.gameObject.SetActive(false);
             m_currentDecor = m_decorIterator.Current as Decor;
             m_currentDecor.gameObject.SetActive(true);
+            m_currentDecor.PauseScrolling();
         }
     }
 
