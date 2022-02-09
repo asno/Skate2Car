@@ -139,6 +139,7 @@ public class Game : MonoBehaviour
         CinematicManager.Instance.gameObject.SetActive(false);
         CharacterController.CanControl = false;
         CharacterController.gameObject.SetActive(false);
+        m_timerInstance.Restart(false);
     }
 
     public void ContinueToNextStage()

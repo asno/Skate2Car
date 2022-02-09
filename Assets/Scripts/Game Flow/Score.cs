@@ -7,14 +7,14 @@ public class Score
 {
     private static Score _instance;
 
-    private const int POINT_PER_SECOND = 1000;
+    private const int POINT_PER_TENTH_SECOND = 100;
     private const int MIN_POINTS = 0;
     private const int MAX_POINTS = 150000;
     private readonly Dictionary<Tuple<int, int>, string> SCORE_TO_MSG_MAPPING = new Dictionary<Tuple<int, int>, string>()
     {
-        { new Tuple<int, int>(MIN_POINTS, 59999), "Vous pouvez encore vous améliorer!" },
-        { new Tuple<int, int>(60000, 130000), "Vous avez éviter de nombreux obstacles! Pas mal!" },
-        { new Tuple<int, int>(130001, MAX_POINTS), "Vous avez très bien su naviguer entre les obstacles! Bravo!" }
+        { new Tuple<int, int>(MIN_POINTS, 59999), "VOUS POUVEZ ENCORE VOUS AMELIORER." },
+        { new Tuple<int, int>(60000, 130000), "VOUS AVEZ EVITE DE NOMBREUX OBSTACLES.\nPAS MAL." },
+        { new Tuple<int, int>(130001, MAX_POINTS), "VOUS AVEZ TRES BIEN NAVIGUER ENTRE LES OBSTACLES.\nBRAVO." }
     };
 
     private float m_points = 0;
@@ -24,12 +24,12 @@ public class Score
 
     private Score()
     {
-        Timer.Instance.RegisterCallbackEveryTick(1, GetPointsForOneSecond);
+        Timer.Instance.RegisterCallbackEveryTick(0.1f, GetPointsForOneTenthSecond);
     }
 
-    private void GetPointsForOneSecond()
+    private void GetPointsForOneTenthSecond()
     {
-        m_points += POINT_PER_SECOND;
+        m_points += POINT_PER_TENTH_SECOND;
     }
 
     public void Reset()

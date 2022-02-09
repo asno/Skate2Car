@@ -38,9 +38,9 @@ public class GameScreen : Screen
     protected override void Exit()
     {
         base.Exit();
+        Deactivate();
         m_isSkipped = true;
-        m_game.CharacterController.CanControl = false;
-        Timer.Instance.Pause();
+
     }
 
     public override void DoUpdate()

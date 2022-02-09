@@ -4,13 +4,14 @@ using UnityEngine.UI;
 
 public class ScoreScreen : Screen
 {
-    private const string MESSAGE = "Score de {0} points\n{1}";
+    private const string MESSAGE = "{0} PTS\n\n{1}";
 
     [SerializeField]
-    private RawImage m_image;
+    private SpriteRenderer m_image;
     [SerializeField]
     private Text m_text;
 
+    private float m_latestScoreupdated;
     private bool m_canPressToSkip;
 
     public override void Initialize()
@@ -31,7 +32,7 @@ public class ScoreScreen : Screen
         m_isSkipped = false;
         m_image.gameObject.SetActive(true);
         m_text.gameObject.SetActive(true);
-        m_text.text = string.Format(MESSAGE, Score.Instance.Points, Score.Instance.GetMessage());
+        m_latestScoreupdated = Score.Instance.Points;
 
         Invoke(nameof(CanPressToSkip), 2f);
     }
@@ -40,7 +41,6 @@ public class ScoreScreen : Screen
     {
         base.Exit();
         Deactivate();
-        m_game.StopGame();
     }
 
     private void CanPressToSkip()
@@ -50,6 +50,11 @@ public class ScoreScreen : Screen
 
     public override void DoUpdate()
     {
+        if(m_latestScoreupdated != Score.Instance.Points)
+        {
+            m_latestScoreupdated = Score.Instance.Points;
+            m_text.text = string.Format(MESSAGE, m_latestScoreupdated, Score.Instance.GetMessage());
+        }
         if (m_canPressToSkip)
         {
             m_isSkipped = Input.GetButtonDown("Fire1") || Input.GetButtonDown("Fire2");
