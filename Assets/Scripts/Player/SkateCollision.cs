@@ -27,7 +27,6 @@ public class SkateCollision : CharacterCollision
         {
             aCollision.GetComponent<Obstacle>()?.Hit();
             m_characterController.GetHitByObstacle();
-            m_isShaking = true;
         }
     }
 
@@ -44,22 +43,26 @@ public class SkateCollision : CharacterCollision
     void OnJumpStart()
     {
         m_isJumping = true;
+        m_isShaking = false;
     }
 
     void OnJumpStop()
     {
         m_isJumping = false;
+        m_isShaking = false;
     }
 
     void OnShakingStart()
     {
         m_isShaking = true;
         m_isJumping = false;
-        m_collider.enabled = true;
+        m_collider.enabled = false;
     }
 
     void OnShakingStop()
     {
         m_isShaking = false;
+        m_isJumping = false;
+        m_collider.enabled = true;
     }
 }

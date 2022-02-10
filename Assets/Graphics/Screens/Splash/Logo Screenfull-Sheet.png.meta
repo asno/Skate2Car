@@ -1,67 +1,67 @@
 fileFormatVersion: 2
-guid: c8af19a88855081469ac542f959fcacc
+guid: a0cea1aec0d88de4b83e41497f65152b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 1447441174439985629
-    second: Logo Screen-Sheet_0
+      213: -5289363208446542269
+    second: Logo Screenfull-Sheet_0
   - first:
-      213: -7004464209029414208
-    second: Logo Screen-Sheet_1
+      213: 7492635044998554654
+    second: Logo Screenfull-Sheet_1
   - first:
-      213: 5554128409822083887
-    second: Logo Screen-Sheet_2
+      213: 5994444847658402798
+    second: Logo Screenfull-Sheet_2
   - first:
-      213: -3774384852519772121
-    second: Logo Screen-Sheet_3
+      213: -1156801958565563730
+    second: Logo Screenfull-Sheet_3
   - first:
-      213: -885474394636151103
-    second: Logo Screen-Sheet_4
+      213: 2139012786083349155
+    second: Logo Screenfull-Sheet_4
   - first:
-      213: -3598818494829088950
-    second: Logo Screen-Sheet_5
+      213: 5044372927721042503
+    second: Logo Screenfull-Sheet_5
   - first:
-      213: 4844844093715159425
-    second: Logo Screen-Sheet_6
+      213: -7117748639681021066
+    second: Logo Screenfull-Sheet_6
   - first:
-      213: -259832126154918333
-    second: Logo Screen-Sheet_7
+      213: -6358138712081128806
+    second: Logo Screenfull-Sheet_7
   - first:
-      213: 7165349124775087671
-    second: Logo Screen-Sheet_8
+      213: -5425987259875144736
+    second: Logo Screenfull-Sheet_8
   - first:
-      213: 399928936498990068
-    second: Logo Screen-Sheet_9
+      213: -7138697832312830464
+    second: Logo Screenfull-Sheet_9
   - first:
-      213: -8149028492497502980
-    second: Logo Screen-Sheet_10
+      213: 8715560761105368537
+    second: Logo Screenfull-Sheet_10
   - first:
-      213: -567364567021362052
-    second: Logo Screen-Sheet_11
+      213: 7433378036745027584
+    second: Logo Screenfull-Sheet_11
   - first:
-      213: -1071248251427391914
-    second: Logo Screen-Sheet_12
+      213: -7317236707729351955
+    second: Logo Screenfull-Sheet_12
   - first:
-      213: 4386296272871414751
-    second: Logo Screen-Sheet_13
+      213: -2909508924232505456
+    second: Logo Screenfull-Sheet_13
   - first:
-      213: 4162022675152560184
-    second: Logo Screen-Sheet_14
+      213: -1142488973347879381
+    second: Logo Screenfull-Sheet_14
   - first:
-      213: -518674636857689494
-    second: Logo Screen-Sheet_15
+      213: 1945117216501438146
+    second: Logo Screenfull-Sheet_15
   - first:
-      213: 505533040592389959
-    second: Logo Screen-Sheet_16
+      213: 205166156601754931
+    second: Logo Screenfull-Sheet_16
   - first:
-      213: 518425741891086876
-    second: Logo Screen-Sheet_17
+      213: -617463726485835702
+    second: Logo Screenfull-Sheet_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
-    sRGBTexture: 0
+    enableMipMap: 0
+    sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
     borderMipMap: 0
@@ -103,8 +103,8 @@ TextureImporter:
   spritePixelsToUnits: 33
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
-  alphaUsage: 1
-  alphaIsTransparency: 1
+  alphaUsage: 0
+  alphaIsTransparency: 0
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -122,7 +122,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -134,7 +134,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -146,7 +146,7 @@ TextureImporter:
     maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 3
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -157,13 +157,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Logo Screen-Sheet_0
+      name: Logo Screenfull-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,20 +171,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd105cb4418561410800000000000000
-      internalID: 1447441174439985629
+      spriteID: 34ef588af286896b0800000000000000
+      internalID: -5289363208446542269
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_1
+      name: Logo Screenfull-Sheet_1
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1428c030ef2bf760800000000000000
+      internalID: 7492635044998554654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_2
       rect:
         serializedVersion: 2
         x: 704
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -192,20 +213,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c24dd2c9e42bce90800000000000000
-      internalID: -7004464209029414208
+      spriteID: ee3895a34db803350800000000000000
+      internalID: 5994444847658402798
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_2
+      name: Logo Screenfull-Sheet_3
+      rect:
+        serializedVersion: 2
+        x: 1056
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea239386fb632ffe0800000000000000
+      internalID: -1156801958565563730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_4
       rect:
         serializedVersion: 2
         x: 1408
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -213,20 +255,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f2bb9589c5a341d40800000000000000
-      internalID: 5554128409822083887
+      spriteID: 3a24484cbcc4fad10800000000000000
+      internalID: 2139012786083349155
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_3
+      name: Logo Screenfull-Sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 742f8679376310640800000000000000
+      internalID: 5044372927721042503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_6
       rect:
         serializedVersion: 2
         x: 2112
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -234,20 +297,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 720a1f369f0be9bc0800000000000000
-      internalID: -3774384852519772121
+      spriteID: 67bfa4bd25da83d90800000000000000
+      internalID: -7117748639681021066
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_4
+      name: Logo Screenfull-Sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2464
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a92aeb9378a53c7a0800000000000000
+      internalID: -6358138712081128806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_8
       rect:
         serializedVersion: 2
         x: 2816
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -255,20 +339,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1c61202cab926b3f0800000000000000
-      internalID: -885474394636151103
+      spriteID: 0ebc853d55503b4b0800000000000000
+      internalID: -5425987259875144736
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_5
+      name: Logo Screenfull-Sheet_9
+      rect:
+        serializedVersion: 2
+        x: 3168
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 006842ad4204eec90800000000000000
+      internalID: -7138697832312830464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_10
       rect:
         serializedVersion: 2
         x: 3520
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -276,20 +381,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a4f2b9475ad6e0ec0800000000000000
-      internalID: -3598818494829088950
+      spriteID: 9d5c400d554e3f870800000000000000
+      internalID: 8715560761105368537
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_6
+      name: Logo Screenfull-Sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3872
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 000c061d0f9a82760800000000000000
+      internalID: 7433378036745027584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_12
       rect:
         serializedVersion: 2
         x: 4224
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -297,20 +423,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1899a0eb8085c3340800000000000000
-      internalID: 4844844093715159425
+      spriteID: dead7529bf3f37a90800000000000000
+      internalID: -7317236707729351955
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_7
+      name: Logo Screenfull-Sheet_13
+      rect:
+        serializedVersion: 2
+        x: 4576
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 097ea447c095f97d0800000000000000
+      internalID: -2909508924232505456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_14
       rect:
         serializedVersion: 2
         x: 4928
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -318,20 +465,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3463d43de04e46cf0800000000000000
-      internalID: -259832126154918333
+      spriteID: b268cc7f4501520f0800000000000000
+      internalID: -1142488973347879381
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_8
+      name: Logo Screenfull-Sheet_15
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 0
+        width: 352
+        height: 198
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c690108dc17efa10800000000000000
+      internalID: 1945117216501438146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Logo Screenfull-Sheet_16
       rect:
         serializedVersion: 2
         x: 5632
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,20 +507,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73e00e9b01f607360800000000000000
-      internalID: 7165349124775087671
+      spriteID: 3350e2c4885e8d200800000000000000
+      internalID: 205166156601754931
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Logo Screen-Sheet_9
+      name: Logo Screenfull-Sheet_17
       rect:
         serializedVersion: 2
-        x: 6336
+        x: 5984
         y: 0
-        width: 704
-        height: 396
+        width: 352
+        height: 198
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -360,176 +528,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4fb0c63bf35dc8500800000000000000
-      internalID: 399928936498990068
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_10
-      rect:
-        serializedVersion: 2
-        x: 7040
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: cfc3620f2c5d8ee80800000000000000
-      internalID: -8149028492497502980
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_11
-      rect:
-        serializedVersion: 2
-        x: 7744
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c746c8caee05028f0800000000000000
-      internalID: -567364567021362052
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_12
-      rect:
-        serializedVersion: 2
-        x: 8448
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 656796b14692221f0800000000000000
-      internalID: -1071248251427391914
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_13
-      rect:
-        serializedVersion: 2
-        x: 9152
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fdbde1878314fdc30800000000000000
-      internalID: 4386296272871414751
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_14
-      rect:
-        serializedVersion: 2
-        x: 9856
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 830e69b529972c930800000000000000
-      internalID: 4162022675152560184
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_15
-      rect:
-        serializedVersion: 2
-        x: 10560
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a6ab7147a2c4dc8f0800000000000000
-      internalID: -518674636857689494
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_16
-      rect:
-        serializedVersion: 2
-        x: 11264
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7478bba3f93040700800000000000000
-      internalID: 505533040592389959
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Logo Screen-Sheet_17
-      rect:
-        serializedVersion: 2
-        x: 11968
-        y: 0
-        width: 704
-        height: 396
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1a26db2771d13700800000000000000
-      internalID: 518425741891086876
+      spriteID: a407f1123045e67f0800000000000000
+      internalID: -617463726485835702
       vertices: []
       indices: 
       edges: []
