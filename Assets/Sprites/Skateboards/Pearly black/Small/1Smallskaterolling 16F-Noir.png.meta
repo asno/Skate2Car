@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: ef615a5a56606e24fb5bf557f554ca9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5025178737906312337
+    second: 1Smallskaterolling 16F-Noir_0
+  - first:
+      213: 4998898103291204697
+    second: 1Smallskaterolling 16F-Noir_1
+  - first:
+      213: -8102710853846193528
+    second: 1Smallskaterolling 16F-Noir_2
+  - first:
+      213: 520932600497514158
+    second: 1Smallskaterolling 16F-Noir_3
+  - first:
+      213: -6750134740888183070
+    second: 1Smallskaterolling 16F-Noir_4
+  - first:
+      213: -35781819223892630
+    second: 1Smallskaterolling 16F-Noir_5
+  - first:
+      213: -879738023632049772
+    second: 1Smallskaterolling 16F-Noir_6
+  - first:
+      213: -7933519048450283667
+    second: 1Smallskaterolling 16F-Noir_7
+  - first:
+      213: -8371160161525060665
+    second: 1Smallskaterolling 16F-Noir_8
+  - first:
+      213: -7752572127280796847
+    second: 1Smallskaterolling 16F-Noir_9
+  - first:
+      213: -3375611289185914724
+    second: 1Smallskaterolling 16F-Noir_10
+  - first:
+      213: -6957206742548855277
+    second: 1Smallskaterolling 16F-Noir_11
+  - first:
+      213: 3147630113138555446
+    second: 1Smallskaterolling 16F-Noir_12
+  - first:
+      213: 2516646217445586340
+    second: 1Smallskaterolling 16F-Noir_13
+  - first:
+      213: 6750058019479031829
+    second: 1Smallskaterolling 16F-Noir_14
+  - first:
+      213: -6442485606478389503
+    second: 1Smallskaterolling 16F-Noir_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19460c500750db540800000000000000
+      internalID: 5025178737906312337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_1
+      rect:
+        serializedVersion: 2
+        x: 73
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954db03f657af5540800000000000000
+      internalID: 4998898103291204697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_2
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88aabce88636d8f80800000000000000
+      internalID: -8102710853846193528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_3
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea6239ca079ba3700800000000000000
+      internalID: 520932600497514158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_4
+      rect:
+        serializedVersion: 2
+        x: 292
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee16578734b252a0800000000000000
+      internalID: -6750134740888183070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_5
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d1ebfff90e08ff0800000000000000
+      internalID: -35781819223892630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_6
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499e106bdea8ac3f0800000000000000
+      internalID: -879738023632049772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_7
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d676352857a76e190800000000000000
+      internalID: -7933519048450283667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_8
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cba5667f2aa3db80800000000000000
+      internalID: -8371160161525060665
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_9
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b65d1a9b4596490800000000000000
+      internalID: -7752572127280796847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_10
+      rect:
+        serializedVersion: 2
+        x: 730
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c907640da6b6721d0800000000000000
+      internalID: -3375611289185914724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_11
+      rect:
+        serializedVersion: 2
+        x: 803
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3164c691459037f90800000000000000
+      internalID: -6957206742548855277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_12
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a32f939e0aeab20800000000000000
+      internalID: 3147630113138555446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_13
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a5bc28a66cece220800000000000000
+      internalID: 2516646217445586340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_14
+      rect:
+        serializedVersion: 2
+        x: 1022
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510135061060dad50800000000000000
+      internalID: 6750058019479031829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 1Smallskaterolling 16F-Noir_15
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 0
+        width: 73
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10fd9438971b796a0800000000000000
+      internalID: -6442485606478389503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

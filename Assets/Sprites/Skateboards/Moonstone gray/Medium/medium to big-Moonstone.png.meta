@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 20426af67290b16409b40f490b213447
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1836316550259294985
+    second: medium to big-Moonstone_0
+  - first:
+      213: 1434561783847076708
+    second: medium to big-Moonstone_1
+  - first:
+      213: -3114726139235705466
+    second: medium to big-Moonstone_2
+  - first:
+      213: 166218028438498527
+    second: medium to big-Moonstone_3
+  - first:
+      213: 2812609179781054358
+    second: medium to big-Moonstone_4
+  - first:
+      213: 8087711774967990090
+    second: medium to big-Moonstone_5
+  - first:
+      213: -1260736810907867750
+    second: medium to big-Moonstone_6
+  - first:
+      213: -673633340436263859
+    second: medium to big-Moonstone_7
+  - first:
+      213: -17751065425780553
+    second: medium to big-Moonstone_8
+  - first:
+      213: -2269247188695585447
+    second: medium to big-Moonstone_9
+  - first:
+      213: 3694603435658477276
+    second: medium to big-Moonstone_10
+  - first:
+      213: 803116843606660378
+    second: medium to big-Moonstone_11
+  - first:
+      213: -3905404282052350184
+    second: medium to big-Moonstone_12
+  - first:
+      213: 4299197949630554978
+    second: medium to big-Moonstone_13
+  - first:
+      213: 3645155755609685622
+    second: medium to big-Moonstone_14
+  - first:
+      213: 5520944269340575615
+    second: medium to big-Moonstone_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medium to big-Moonstone_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fcbf96a3d71486e0800000000000000
+      internalID: -1836316550259294985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4634e8e775698e310800000000000000
+      internalID: 1434561783847076708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d5b32341546c4d0800000000000000
+      internalID: -3114726139235705466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_3
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fdca75c8a668e4200800000000000000
+      internalID: 166218028438498527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_4
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69f3adca525680720800000000000000
+      internalID: 2812609179781054358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_5
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4706b042035d3070800000000000000
+      internalID: 8087711774967990090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_6
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95e396dc86f08ee0800000000000000
+      internalID: -1260736810907867750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_7
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4ccf62cb06c6a6f0800000000000000
+      internalID: -673633340436263859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_8
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b069e2008fe0cff0800000000000000
+      internalID: -17751065425780553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_9
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95dee3274b30280e0800000000000000
+      internalID: -2269247188695585447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_10
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde7c58ff3ed54330800000000000000
+      internalID: 3694603435658477276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_11
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15de40a38e352b00800000000000000
+      internalID: 803116843606660378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_12
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81feaf74f773dc9c0800000000000000
+      internalID: -3905404282052350184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_13
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26321dec1c1d9ab30800000000000000
+      internalID: 4299197949630554978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_14
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67ef51cc8d1369230800000000000000
+      internalID: 3645155755609685622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-Moonstone_15
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7706cecf855e9c40800000000000000
+      internalID: 5520944269340575615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

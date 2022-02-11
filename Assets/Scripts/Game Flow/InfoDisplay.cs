@@ -21,22 +21,21 @@ public class InfoDisplay : MonoBehaviour
     {
         Debug.Assert(m_timer != null, "Unexpected null reference to m_timer");
         Debug.Assert(m_fps != null, "Unexpected null reference to m_fps");
-
-        m_scoreInstance = Score.Instance;
-        Debug.Assert(m_scoreInstance != null, "Unexpected null reference to m_score");
-
-        InvokeRepeating(nameof(GetFPS), 1, 1);
     }
 
     void Start()
     {
         m_game = Game.Instance;
-        Debug.Assert(m_game != null, "Unexpected null reference to m_game");      
+        Debug.Assert(m_game != null, "Unexpected null reference to m_game");
+        m_scoreInstance = Score.Instance;
+        Debug.Assert(m_scoreInstance != null, "Unexpected null reference to m_score");
+
+        InvokeRepeating(nameof(GetFPS), 1, 1); 
     }
 
     void Update()
     {
-        TimeSpan time = TimeSpan.FromSeconds(Timer.Instance.Time);
+        TimeSpan time = TimeSpan.FromSeconds(m_game.Timer.Time);
         m_timer.text = string.Format(TIMER, time.ToString("hh':'mm':'ss"));
         m_score.text = string.Format(SCORE, m_scoreInstance.Points);
     }

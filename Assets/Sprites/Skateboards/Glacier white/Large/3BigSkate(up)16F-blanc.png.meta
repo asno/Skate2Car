@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 298eee828d42d6c4e8353da7dfdb45b0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5919846151938599122
+    second: 3BigSkate(up)16F-blanc_0
+  - first:
+      213: -1134119570878380810
+    second: 3BigSkate(up)16F-blanc_1
+  - first:
+      213: -7458721818408597929
+    second: 3BigSkate(up)16F-blanc_2
+  - first:
+      213: 9023024861495633338
+    second: 3BigSkate(up)16F-blanc_3
+  - first:
+      213: 496516206278736307
+    second: 3BigSkate(up)16F-blanc_4
+  - first:
+      213: -5202827512949080492
+    second: 3BigSkate(up)16F-blanc_5
+  - first:
+      213: 7934024876324381513
+    second: 3BigSkate(up)16F-blanc_6
+  - first:
+      213: -4652387099446219906
+    second: 3BigSkate(up)16F-blanc_7
+  - first:
+      213: -5763848361318827305
+    second: 3BigSkate(up)16F-blanc_8
+  - first:
+      213: 6212516251949247111
+    second: 3BigSkate(up)16F-blanc_9
+  - first:
+      213: 8567011146907021026
+    second: 3BigSkate(up)16F-blanc_10
+  - first:
+      213: -6552747441715385173
+    second: 3BigSkate(up)16F-blanc_11
+  - first:
+      213: -7543706834913111492
+    second: 3BigSkate(up)16F-blanc_12
+  - first:
+      213: -8914793938224161944
+    second: 3BigSkate(up)16F-blanc_13
+  - first:
+      213: 8304826413563437081
+    second: 3BigSkate(up)16F-blanc_14
+  - first:
+      213: 1483888592143845412
+    second: 3BigSkate(up)16F-blanc_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e279cbc1a4b78dda0800000000000000
+      internalID: -5919846151938599122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f4c9f4524cc240f0800000000000000
+      internalID: -1134119570878380810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756cc4f260c4d7890800000000000000
+      internalID: -7458721818408597929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab527f43e49383d70800000000000000
+      internalID: 9023024861495633338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b9f774ebdaf3e600800000000000000
+      internalID: 496516206278736307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45e7a0751f7dbc7b0800000000000000
+      internalID: -5202827512949080492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9436d68b6915b1e60800000000000000
+      internalID: 7934024876324381513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7be5eb15966f6fb0800000000000000
+      internalID: -4652387099446219906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_8
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dabf5c1472b200b0800000000000000
+      internalID: -5763848361318827305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_9
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78aa6c6ad9a473650800000000000000
+      internalID: 6212516251949247111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_10
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2ee64368f3324e670800000000000000
+      internalID: 8567011146907021026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_11
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac64b17be6ff05a0800000000000000
+      internalID: -6552747441715385173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_12
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3251571a9e5f4790800000000000000
+      internalID: -7543706834913111492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_13
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bd752552a484480800000000000000
+      internalID: -8914793938224161944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_14
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910eabd4f9ba04370800000000000000
+      internalID: 8304826413563437081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkate(up)16F-blanc_15
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 166
+        height: 111
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4280df400d4d79410800000000000000
+      internalID: 1483888592143845412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: da5b4369baeac4c4485b1d30f2720de0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 434533098141440650
+    second: 3BigSkatejump 16F-Noir_0
+  - first:
+      213: 2510455891039839075
+    second: 3BigSkatejump 16F-Noir_1
+  - first:
+      213: -1740901425688744690
+    second: 3BigSkatejump 16F-Noir_2
+  - first:
+      213: 7001169015339293814
+    second: 3BigSkatejump 16F-Noir_3
+  - first:
+      213: -6206619890677439037
+    second: 3BigSkatejump 16F-Noir_4
+  - first:
+      213: -1302677024727043818
+    second: 3BigSkatejump 16F-Noir_5
+  - first:
+      213: 7540486062412751377
+    second: 3BigSkatejump 16F-Noir_6
+  - first:
+      213: -7803891384354288465
+    second: 3BigSkatejump 16F-Noir_7
+  - first:
+      213: 4291340972424356457
+    second: 3BigSkatejump 16F-Noir_8
+  - first:
+      213: 4149287554036362114
+    second: 3BigSkatejump 16F-Noir_9
+  - first:
+      213: -4516073705034251642
+    second: 3BigSkatejump 16F-Noir_10
+  - first:
+      213: -1680895930675447396
+    second: 3BigSkatejump 16F-Noir_11
+  - first:
+      213: 5649990911674369802
+    second: 3BigSkatejump 16F-Noir_12
+  - first:
+      213: -8509087309916979943
+    second: 3BigSkatejump 16F-Noir_13
+  - first:
+      213: -8693926555331994794
+    second: 3BigSkatejump 16F-Noir_14
+  - first:
+      213: -763170501416362096
+    second: 3BigSkatejump 16F-Noir_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8adeddec85c70600800000000000000
+      internalID: 434533098141440650
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36367b9f45ee6d220800000000000000
+      internalID: 2510455891039839075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0de9d4806317d7e0800000000000000
+      internalID: -1740901425688744690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67c15cb2026292160800000000000000
+      internalID: 7001169015339293814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_4
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c52c40f718add9a0800000000000000
+      internalID: -6206619890677439037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_5
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 611f41cd526fbede0800000000000000
+      internalID: -1302677024727043818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_6
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11265ef5f1035a860800000000000000
+      internalID: 7540486062412751377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_7
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: facc4d9f12203b390800000000000000
+      internalID: -7803891384354288465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_8
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962ee6fb0e7ed8b30800000000000000
+      internalID: 4291340972424356457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_9
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b6949eb0b359930800000000000000
+      internalID: 4149287554036362114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_10
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68283f774eea351c0800000000000000
+      internalID: -4516073705034251642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_11
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c99b0bb8e024ca8e0800000000000000
+      internalID: -1680895930675447396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_12
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07498a9cccc86e40800000000000000
+      internalID: 5649990911674369802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_13
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91d3d99bc26a9e980800000000000000
+      internalID: -8509087309916979943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_14
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65bd91e3cd7f85780800000000000000
+      internalID: -8693926555331994794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-Noir_15
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09f5500f87ca865f0800000000000000
+      internalID: -763170501416362096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

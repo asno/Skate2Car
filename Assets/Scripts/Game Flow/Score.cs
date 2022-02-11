@@ -24,7 +24,7 @@ public class Score
 
     private Score()
     {
-        Timer.Instance.RegisterCallbackEveryTick(0.1f, GetPointsForOneTenthSecond);
+        Game.Instance.Timer.RegisterCallbackEveryTick(0.1f, GetPointsForOneTenthSecond);
     }
 
     private void GetPointsForOneTenthSecond()

@@ -16,6 +16,8 @@ public class CinematicManager : MonoBehaviour
 
     void Awake()
     {
+        m_game = Game.Instance;
+        Debug.Assert(m_game != null, "Unexpected null reference to m_game");
         Debug.Assert(m_cinematics != null, "Unexpected null reference to m_cinematics");
         Debug.Assert(m_cinematics.Length > 0, "Empty container m_cinematics");
 
@@ -24,9 +26,6 @@ public class CinematicManager : MonoBehaviour
 
     void Start()
     {
-        m_game = Game.Instance;
-        Debug.Assert(m_game != null, "Unexpected null reference to m_game");
-
         Reset();
     }
 
@@ -41,7 +40,7 @@ public class CinematicManager : MonoBehaviour
             return;
 
         m_game.CharacterController.CanControl = false;
-        Timer.Instance.Pause();
+        m_game.Timer.Pause();
 
         if (m_currentCinematicProcess != null)
             StopCoroutine(m_currentCinematicProcess);
@@ -65,6 +64,6 @@ public class CinematicManager : MonoBehaviour
     private void ResumeGame()
     {
         m_game.CharacterController.CanControl = true;
-        Timer.Instance.Resume();
+        m_game.Timer.Resume();
     }
 }

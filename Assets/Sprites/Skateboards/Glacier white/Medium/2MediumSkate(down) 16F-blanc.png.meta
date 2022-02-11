@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 944fd3eda1f21b64aa47f1bc691c1022
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2269921589493062991
+    second: 2MediumSkate(down) 16F-blanc_0
+  - first:
+      213: 8975685571274685564
+    second: 2MediumSkate(down) 16F-blanc_1
+  - first:
+      213: 8899386577300627610
+    second: 2MediumSkate(down) 16F-blanc_2
+  - first:
+      213: 3902047980705146241
+    second: 2MediumSkate(down) 16F-blanc_3
+  - first:
+      213: -6156467484858029482
+    second: 2MediumSkate(down) 16F-blanc_4
+  - first:
+      213: -8824931484049693712
+    second: 2MediumSkate(down) 16F-blanc_5
+  - first:
+      213: 26890852583093660
+    second: 2MediumSkate(down) 16F-blanc_6
+  - first:
+      213: -4436508851804662221
+    second: 2MediumSkate(down) 16F-blanc_7
+  - first:
+      213: -5201454524917869755
+    second: 2MediumSkate(down) 16F-blanc_8
+  - first:
+      213: -2444123136234113727
+    second: 2MediumSkate(down) 16F-blanc_9
+  - first:
+      213: 4885023277764421611
+    second: 2MediumSkate(down) 16F-blanc_10
+  - first:
+      213: -1440874789018133061
+    second: 2MediumSkate(down) 16F-blanc_11
+  - first:
+      213: -7483384168742000657
+    second: 2MediumSkate(down) 16F-blanc_12
+  - first:
+      213: 1343799403400771017
+    second: 2MediumSkate(down) 16F-blanc_13
+  - first:
+      213: -7453514278021750883
+    second: 2MediumSkate(down) 16F-blanc_14
+  - first:
+      213: -5468655053044642444
+    second: 2MediumSkate(down) 16F-blanc_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4d59b9b8a1608f10800000000000000
+      internalID: 2269921589493062991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_1
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7c3d6bc87a009c70800000000000000
+      internalID: 8975685571274685564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_2
+      rect:
+        serializedVersion: 2
+        x: 222
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9022eae0f8f08b70800000000000000
+      internalID: 8899386577300627610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_3
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185e57ae6fbd62630800000000000000
+      internalID: 3902047980705146241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_4
+      rect:
+        serializedVersion: 2
+        x: 444
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65a6bcdd075df8aa0800000000000000
+      internalID: -6156467484858029482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_5
+      rect:
+        serializedVersion: 2
+        x: 555
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f3ae0e529b878580800000000000000
+      internalID: -8824931484049693712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_6
+      rect:
+        serializedVersion: 2
+        x: 666
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c953ce386198f5000800000000000000
+      internalID: 26890852583093660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_7
+      rect:
+        serializedVersion: 2
+        x: 777
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3369e4574ba5e62c0800000000000000
+      internalID: -4436508851804662221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_8
+      rect:
+        serializedVersion: 2
+        x: 888
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5431ce60ba8b0d7b0800000000000000
+      internalID: -5201454524917869755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_9
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 145b37505fab41ed0800000000000000
+      internalID: -2444123136234113727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_10
+      rect:
+        serializedVersion: 2
+        x: 1110
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be7a9a60ac61bc340800000000000000
+      internalID: 4885023277764421611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_11
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbd12c2730cf00ce0800000000000000
+      internalID: -1440874789018133061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_12
+      rect:
+        serializedVersion: 2
+        x: 1332
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7e9584fbda52890800000000000000
+      internalID: -7483384168742000657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_13
+      rect:
+        serializedVersion: 2
+        x: 1443
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c5b519007226a210800000000000000
+      internalID: 1343799403400771017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_14
+      rect:
+        serializedVersion: 2
+        x: 1554
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f163a214ccf8890800000000000000
+      internalID: -7453514278021750883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(down) 16F-blanc_15
+      rect:
+        serializedVersion: 2
+        x: 1665
+        y: 0
+        width: 111
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47d0124143f6b14b0800000000000000
+      internalID: -5468655053044642444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

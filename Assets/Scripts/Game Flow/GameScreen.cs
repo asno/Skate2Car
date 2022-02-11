@@ -40,18 +40,17 @@ public class GameScreen : Screen
         base.Exit();
         Deactivate();
         m_isSkipped = true;
-
     }
 
     public override void DoUpdate()
     {
-        if (Timer.Instance.Time >= m_playTime)
+        if (m_game.Timer.Time >= m_playTime)
             Exit();
 
         m_resetButtonTime = Input.GetButton("Fire2") ? m_resetButtonTime + Time.deltaTime : 0;
         if (m_canReset)
         {
-            if (m_resetButtonTime >= RESET_BUTTON_TIME && m_game.CharacterController.CanMove() && !Timer.Instance.IsPaused)
+            if (m_resetButtonTime >= RESET_BUTTON_TIME && m_game.CharacterController.CanMove() && !m_game.Timer.IsPaused)
                 Reset();
         }
         else

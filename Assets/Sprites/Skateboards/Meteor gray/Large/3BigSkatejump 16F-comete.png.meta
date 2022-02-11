@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: e1d80587f7ca6df49acc92eaaee11bce
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8840409687848919113
+    second: 3BigSkatejump 16F-comete_0
+  - first:
+      213: 5962713963270901653
+    second: 3BigSkatejump 16F-comete_1
+  - first:
+      213: 48598189540022523
+    second: 3BigSkatejump 16F-comete_2
+  - first:
+      213: -4860821410978017070
+    second: 3BigSkatejump 16F-comete_3
+  - first:
+      213: -816598792779116425
+    second: 3BigSkatejump 16F-comete_4
+  - first:
+      213: -3501416599354735170
+    second: 3BigSkatejump 16F-comete_5
+  - first:
+      213: -5938553444591139333
+    second: 3BigSkatejump 16F-comete_6
+  - first:
+      213: 7152327788347902765
+    second: 3BigSkatejump 16F-comete_7
+  - first:
+      213: 8958190627774368188
+    second: 3BigSkatejump 16F-comete_8
+  - first:
+      213: -8433494203179234264
+    second: 3BigSkatejump 16F-comete_9
+  - first:
+      213: -5180689642778806250
+    second: 3BigSkatejump 16F-comete_10
+  - first:
+      213: -1204666811796482659
+    second: 3BigSkatejump 16F-comete_11
+  - first:
+      213: 1909351851530560585
+    second: 3BigSkatejump 16F-comete_12
+  - first:
+      213: 8333136200427289862
+    second: 3BigSkatejump 16F-comete_13
+  - first:
+      213: 6503327228680271783
+    second: 3BigSkatejump 16F-comete_14
+  - first:
+      213: -6513423394153572298
+    second: 3BigSkatejump 16F-comete_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bfd7d63a3e805580800000000000000
+      internalID: -8840409687848919113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_1
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59f060ef1c0dfb250800000000000000
+      internalID: 5962713963270901653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_2
+      rect:
+        serializedVersion: 2
+        x: 386
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf89240cbc7aca000800000000000000
+      internalID: 48598189540022523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_3
+      rect:
+        serializedVersion: 2
+        x: 579
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d0da023ea4ea8cb0800000000000000
+      internalID: -4860821410978017070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_4
+      rect:
+        serializedVersion: 2
+        x: 772
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 770536879bbdaa4f0800000000000000
+      internalID: -816598792779116425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_5
+      rect:
+        serializedVersion: 2
+        x: 965
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb50ec87728786fc0800000000000000
+      internalID: -3501416599354735170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_6
+      rect:
+        serializedVersion: 2
+        x: 1158
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5097f1b15069da0800000000000000
+      internalID: -5938553444591139333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_7
+      rect:
+        serializedVersion: 2
+        x: 1351
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2bc1a59a3c224360800000000000000
+      internalID: 7152327788347902765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_8
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb989b6d9e2e15c70800000000000000
+      internalID: 8958190627774368188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_9
+      rect:
+        serializedVersion: 2
+        x: 1737
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c8f2c64b536fa80800000000000000
+      internalID: -8433494203179234264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_10
+      rect:
+        serializedVersion: 2
+        x: 1930
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618bf96e73e7a18b0800000000000000
+      internalID: -5180689642778806250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_11
+      rect:
+        serializedVersion: 2
+        x: 2123
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d951b22dae9284fe0800000000000000
+      internalID: -1204666811796482659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_12
+      rect:
+        serializedVersion: 2
+        x: 2316
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 944a6bd84616f7a10800000000000000
+      internalID: 1909351851530560585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_13
+      rect:
+        serializedVersion: 2
+        x: 2509
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60dba63393f35a370800000000000000
+      internalID: 8333136200427289862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_14
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a7fc9b88a5704a50800000000000000
+      internalID: 6503327228680271783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkatejump 16F-comete_15
+      rect:
+        serializedVersion: 2
+        x: 2895
+        y: 0
+        width: 193
+        height: 250
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638d1cfbeebab95a0800000000000000
+      internalID: -6513423394153572298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -7,14 +7,11 @@ public delegate void NotifyTimerState();
 
 public class Timer : MonoBehaviour
 {
-    private static Timer _instance;
-
     private bool m_isStarted = false;
     private bool m_isPaused;
     private float m_time;
     private Coroutine m_process;
 
-    public static Timer Instance { get => _instance ??= new GameObject("Timer").AddComponent<Timer>(); }
     public bool IsPaused { get => m_isPaused; }
     public float Time { get => m_time; }
 

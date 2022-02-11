@@ -70,7 +70,7 @@ public abstract class CharacterController2D : MonoBehaviour
         {
             PollButtonInput();
 
-            var x = Input.GetAxis("Horizontal");
+            float x = Input.GetAxis("Horizontal");
             if (x != 0)
             {
                 bool canMoveLeft = x < 0 && !m_rigidbody.IsTouchingLayers(m_backMask);
@@ -78,7 +78,7 @@ public abstract class CharacterController2D : MonoBehaviour
                 if (canMoveLeft || canMoveRight)
                     translation.x = x;
             }
-            var y = Input.GetAxis("Vertical");
+            float y = Input.GetAxis("Vertical");
             if (y != 0)
             {
                 bool canMoveUp = y < 0 && !m_rigidbody.IsTouchingLayers(m_floorMask);

@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: c1010c60aa5c0b342b67fa9a2f3e9eb9
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1035965138082448602
+    second: medium to big-comete_0
+  - first:
+      213: -8457408645887289808
+    second: medium to big-comete_1
+  - first:
+      213: -233907006264265852
+    second: medium to big-comete_2
+  - first:
+      213: -8380181237675738385
+    second: medium to big-comete_3
+  - first:
+      213: 1120264225153489527
+    second: medium to big-comete_4
+  - first:
+      213: 5219779184533530704
+    second: medium to big-comete_5
+  - first:
+      213: -1711525114006828418
+    second: medium to big-comete_6
+  - first:
+      213: 2428931608732674984
+    second: medium to big-comete_7
+  - first:
+      213: 7787334660630918397
+    second: medium to big-comete_8
+  - first:
+      213: 7165076692366655731
+    second: medium to big-comete_9
+  - first:
+      213: 2954784478800978615
+    second: medium to big-comete_10
+  - first:
+      213: 2499431592656236472
+    second: medium to big-comete_11
+  - first:
+      213: -622052553715037553
+    second: medium to big-comete_12
+  - first:
+      213: -8224978750811229115
+    second: medium to big-comete_13
+  - first:
+      213: 3670690478846377556
+    second: medium to big-comete_14
+  - first:
+      213: 1700551458399668949
+    second: medium to big-comete_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medium to big-comete_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62b38e812338f91f0800000000000000
+      internalID: -1035965138082448602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 036129555af31aa80800000000000000
+      internalID: -8457408645887289808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483b42d21def0ccf0800000000000000
+      internalID: -233907006264265852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_3
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feab1fe709d93bb80800000000000000
+      internalID: -8380181237675738385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_4
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a1ada906afb8f00800000000000000
+      internalID: 1120264225153489527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_5
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05869144381607840800000000000000
+      internalID: 5219779184533530704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_6
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7a86731af07f38e0800000000000000
+      internalID: -1711525114006828418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_7
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8abaa3add6c45b120800000000000000
+      internalID: 2428931608732674984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_8
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df43ef16d9b221c60800000000000000
+      internalID: 7787334660630918397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_9
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f002fc1a477f6360800000000000000
+      internalID: 7165076692366655731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_10
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b225ce04d0810920800000000000000
+      internalID: 2954784478800978615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_11
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bfe9ac7ac3cfa220800000000000000
+      internalID: 2499431592656236472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_12
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ac0388f760e57f0800000000000000
+      internalID: -622052553715037553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_13
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 544b2c867610bdd80800000000000000
+      internalID: -8224978750811229115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_14
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45efb08da89e0f230800000000000000
+      internalID: 3670690478846377556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-comete_15
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da4f20aa82999710800000000000000
+      internalID: 1700551458399668949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: 8b9c9db2f7c3ee145a38375238d47a44
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2805842934002010300
+    second: 3BigSkaterolling 16F-bleu_0
+  - first:
+      213: -7820060623228678955
+    second: 3BigSkaterolling 16F-bleu_1
+  - first:
+      213: -8347895178954625994
+    second: 3BigSkaterolling 16F-bleu_2
+  - first:
+      213: 854807605865960505
+    second: 3BigSkaterolling 16F-bleu_3
+  - first:
+      213: -5036923977789578640
+    second: 3BigSkaterolling 16F-bleu_4
+  - first:
+      213: 288169046174804856
+    second: 3BigSkaterolling 16F-bleu_5
+  - first:
+      213: -3933548081437970997
+    second: 3BigSkaterolling 16F-bleu_6
+  - first:
+      213: 2009966961786551179
+    second: 3BigSkaterolling 16F-bleu_7
+  - first:
+      213: -1709188243783642673
+    second: 3BigSkaterolling 16F-bleu_8
+  - first:
+      213: 7981735509406854249
+    second: 3BigSkaterolling 16F-bleu_9
+  - first:
+      213: 4431715160900036236
+    second: 3BigSkaterolling 16F-bleu_10
+  - first:
+      213: -78813196678775960
+    second: 3BigSkaterolling 16F-bleu_11
+  - first:
+      213: 7406561897334545574
+    second: 3BigSkaterolling 16F-bleu_12
+  - first:
+      213: -1518615641596546812
+    second: 3BigSkaterolling 16F-bleu_13
+  - first:
+      213: -3826984909523272991
+    second: 3BigSkaterolling 16F-bleu_14
+  - first:
+      213: 6753253115227042704
+    second: 3BigSkaterolling 16F-bleu_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 447354fa7b4af09d0800000000000000
+      internalID: -2805842934002010300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_1
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dc4f6eab40997390800000000000000
+      internalID: -7820060623228678955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_2
+      rect:
+        serializedVersion: 2
+        x: 332
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ca6345091562c80800000000000000
+      internalID: -8347895178954625994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_3
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93451f21df2ecdb00800000000000000
+      internalID: 854807605865960505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_4
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07264373450491ab0800000000000000
+      internalID: -5036923977789578640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_5
+      rect:
+        serializedVersion: 2
+        x: 830
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87b23808838cff300800000000000000
+      internalID: 288169046174804856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_6
+      rect:
+        serializedVersion: 2
+        x: 996
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcd68fa5cda3969c0800000000000000
+      internalID: -3933548081437970997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_7
+      rect:
+        serializedVersion: 2
+        x: 1162
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8bfe8f6d46d4eb10800000000000000
+      internalID: 2009966961786551179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_8
+      rect:
+        serializedVersion: 2
+        x: 1328
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc19003195eb748e0800000000000000
+      internalID: -1709188243783642673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_9
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c21512822d4ce60800000000000000
+      internalID: 7981735509406854249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_10
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86e827657d908d30800000000000000
+      internalID: 4431715160900036236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_11
+      rect:
+        serializedVersion: 2
+        x: 1826
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b3950b0dff7eef0800000000000000
+      internalID: -78813196678775960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_12
+      rect:
+        serializedVersion: 2
+        x: 1992
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac9191ddc469c660800000000000000
+      internalID: 7406561897334545574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_13
+      rect:
+        serializedVersion: 2
+        x: 2158
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4013944be1bcceae0800000000000000
+      internalID: -1518615641596546812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_14
+      rect:
+        serializedVersion: 2
+        x: 2324
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eab5134081d3eac0800000000000000
+      internalID: -3826984909523272991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 3BigSkaterolling 16F-bleu_15
+      rect:
+        serializedVersion: 2
+        x: 2490
+        y: 0
+        width: 166
+        height: 109
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09378639def58bd50800000000000000
+      internalID: 6753253115227042704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

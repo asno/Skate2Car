@@ -27,29 +27,32 @@ public class Game : MonoBehaviour
     private Queue<float> m_spawningTime;
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
-    private Timer m_timerInstance;
+    private Timer m_timer;
 
-    public static Game Instance { get => _instance;}
+    public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
 
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
+    public Timer @Timer { get => m_timer; }
 
     void Awake()
     {
         Application.targetFrameRate = m_targetFrameRate;
 
-        _instance = this;
         Debug.Assert(m_screen != null, "Unexpected null reference to m_screen");
         Debug.Assert(m_configFileTemplate != null, "Unexpected null reference to m_configFile");
         m_characterManager = GetComponent<CharacterManager>();
         Debug.Assert(m_characterManager != null, "Unexpected null reference to m_characterManager");
+        m_characterManager = GetComponent<CharacterManager>();
+        Debug.Assert(m_characterManager != null, "Unexpected null reference to m_characterManager");
         m_obstacles = GetComponentsInChildren<Obstacle>(true);
+        m_timer = GetComponent<Timer>();
+        Debug.Assert(m_timer != null, "Unexpected null reference to m_timerInstance");
 
         LoadGameSetupFile();
 
         m_scrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
         DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup);
 
-        m_timerInstance = Timer.Instance;
         m_screen.Initialize();
         InitializeQueues();
     }
@@ -69,7 +72,7 @@ public class Game : MonoBehaviour
 
         if (m_spawningTime != null && m_spawningTime.Count > 0)
         {
-            if (m_spawningTime.First() <= m_timerInstance.Time)
+            if (m_spawningTime.First() <= m_timer.Time)
             {
                 m_spawningTime.Dequeue();
                 var bid = m_spawningBid.Dequeue();
@@ -91,7 +94,8 @@ public class Game : MonoBehaviour
         }
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
         {
-            if (m_cinematicsTime.First() <= m_timerInstance.Time)
+            float time = m_cinematicsTime.First<float>();
+            if (time <= m_timer.Time)
             {
                 m_cinematicsTime.Dequeue();
                 CinematicManager.Instance.StartNextCinematic();
@@ -111,7 +115,7 @@ public class Game : MonoBehaviour
 
     public void Reset()
     {
-        m_timerInstance.Restart();
+        m_timer.Restart();
 
         InitializeQueues();
         foreach (var o in m_obstacles)
@@ -139,7 +143,7 @@ public class Game : MonoBehaviour
         CinematicManager.Instance.gameObject.SetActive(false);
         CharacterController.CanControl = false;
         CharacterController.gameObject.SetActive(false);
-        m_timerInstance.Restart(false);
+        m_timer.Restart(false);
     }
 
     public void ContinueToNextStage()

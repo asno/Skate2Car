@@ -5,6 +5,9 @@ public class Skateboard : MonoBehaviour
 {
     [SerializeField]
     private Animator[] m_characterAnimators;
+    [SerializeField]
+    private RuntimeAnimatorController[] m_animatorControllers;
+    protected AnimatorOverrideController m_animatorOverrideController;
 
     private IEnumerator m_characterAnimatorIterator;
     private Animator m_currentCharacterAnimator;
@@ -19,12 +22,30 @@ public class Skateboard : MonoBehaviour
         Debug.Assert(m_animator != null, "Unexpected null reference to m_animator");
         m_skateCollision = GetComponent<SkateCollision>();
         Debug.Assert(m_skateCollision != null, "Unexpected null reference to m_skateCollision");
+
         Debug.Assert(m_characterAnimators != null, "Unexpected null reference to m_characterAnimators");
         Debug.Assert(m_characterAnimators.Length > 0, "Empty container m_characterAnimators");
 
         m_characterAnimatorIterator = m_characterAnimators.GetEnumerator();
         m_characterAnimatorIterator.MoveNext();
         m_currentCharacterAnimator = m_characterAnimatorIterator.Current as Animator;
+    }
+
+    void Update()
+    {
+        if (m_animatorControllers == null)
+            return;
+
+        int i = -1;
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            i = 0;
+        if (Input.GetKeyDown(KeyCode.Alpha2))
+            i = 1;
+        if (i >= 0)
+        {
+            m_animatorOverrideController = new AnimatorOverrideController(m_animatorControllers[i]);
+            m_animator.runtimeAnimatorController = m_animatorOverrideController;
+        }
     }
 
     public void Reset()

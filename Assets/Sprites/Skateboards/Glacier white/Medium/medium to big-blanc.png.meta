@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: e262d85b416c1ea4585fac5accdf3c1d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5049146994973472608
+    second: medium to big-blanc_0
+  - first:
+      213: 8688107634847864357
+    second: medium to big-blanc_1
+  - first:
+      213: -9137499487432145522
+    second: medium to big-blanc_2
+  - first:
+      213: 7968023037373322617
+    second: medium to big-blanc_3
+  - first:
+      213: 6324129152912281716
+    second: medium to big-blanc_4
+  - first:
+      213: 4054542124237168387
+    second: medium to big-blanc_5
+  - first:
+      213: -648221381485771361
+    second: medium to big-blanc_6
+  - first:
+      213: -5758629346510183387
+    second: medium to big-blanc_7
+  - first:
+      213: 7405078164520667731
+    second: medium to big-blanc_8
+  - first:
+      213: -9052560088480616385
+    second: medium to big-blanc_9
+  - first:
+      213: -349183670870067513
+    second: medium to big-blanc_10
+  - first:
+      213: -2973228419193816366
+    second: medium to big-blanc_11
+  - first:
+      213: -6210408545351431659
+    second: medium to big-blanc_12
+  - first:
+      213: 1729856564284907575
+    second: medium to big-blanc_13
+  - first:
+      213: -2468954995041254005
+    second: medium to big-blanc_14
+  - first:
+      213: -3736016418312583030
+    second: medium to big-blanc_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: medium to big-blanc_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a800e14f83dde9b0800000000000000
+      internalID: -5049146994973472608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_1
+      rect:
+        serializedVersion: 2
+        x: 191
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5265771ccdb529870800000000000000
+      internalID: 8688107634847864357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_2
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e850b44f0a4113180800000000000000
+      internalID: -9137499487432145522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_3
+      rect:
+        serializedVersion: 2
+        x: 573
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97514c07cba149e60800000000000000
+      internalID: 7968023037373322617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_4
+      rect:
+        serializedVersion: 2
+        x: 764
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470570935f1d3c750800000000000000
+      internalID: 6324129152912281716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_5
+      rect:
+        serializedVersion: 2
+        x: 955
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f93028490a44830800000000000000
+      internalID: 4054542124237168387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_6
+      rect:
+        serializedVersion: 2
+        x: 1146
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f954ab4861e0107f0800000000000000
+      internalID: -648221381485771361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_7
+      rect:
+        serializedVersion: 2
+        x: 1337
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524ee10be1d3510b0800000000000000
+      internalID: -5758629346510183387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_8
+      rect:
+        serializedVersion: 2
+        x: 1528
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35a814a5b5f14c660800000000000000
+      internalID: 7405078164520667731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_9
+      rect:
+        serializedVersion: 2
+        x: 1719
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f30fb32ef88de5280800000000000000
+      internalID: -9052560088480616385
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_10
+      rect:
+        serializedVersion: 2
+        x: 1910
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c63c682d43772bf0800000000000000
+      internalID: -349183670870067513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_11
+      rect:
+        serializedVersion: 2
+        x: 2101
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da3bdd6188fcb6d0800000000000000
+      internalID: -2973228419193816366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_12
+      rect:
+        serializedVersion: 2
+        x: 2292
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51a0748055230d9a0800000000000000
+      internalID: -6210408545351431659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_13
+      rect:
+        serializedVersion: 2
+        x: 2483
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 730649a416fa10810800000000000000
+      internalID: 1729856564284907575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_14
+      rect:
+        serializedVersion: 2
+        x: 2674
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b85c32a53828cbdd0800000000000000
+      internalID: -2468954995041254005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: medium to big-blanc_15
+      rect:
+        serializedVersion: 2
+        x: 2865
+        y: 0
+        width: 191
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a88837f9cd0072cc0800000000000000
+      internalID: -3736016418312583030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

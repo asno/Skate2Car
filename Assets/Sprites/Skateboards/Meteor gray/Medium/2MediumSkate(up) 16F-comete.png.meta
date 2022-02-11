@@ -1,0 +1,504 @@
+fileFormatVersion: 2
+guid: bc09045b174eb3e4d991a4e39a64dfed
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4539201050366937247
+    second: 2MediumSkate(up) 16F-comete_0
+  - first:
+      213: -1816529585353770795
+    second: 2MediumSkate(up) 16F-comete_1
+  - first:
+      213: -6207386411814919790
+    second: 2MediumSkate(up) 16F-comete_2
+  - first:
+      213: 2720030842811739588
+    second: 2MediumSkate(up) 16F-comete_3
+  - first:
+      213: -5923221200904961603
+    second: 2MediumSkate(up) 16F-comete_4
+  - first:
+      213: 9114735570870412564
+    second: 2MediumSkate(up) 16F-comete_5
+  - first:
+      213: 2253393441511069525
+    second: 2MediumSkate(up) 16F-comete_6
+  - first:
+      213: 4129654452295058954
+    second: 2MediumSkate(up) 16F-comete_7
+  - first:
+      213: -8312691505575105403
+    second: 2MediumSkate(up) 16F-comete_8
+  - first:
+      213: -6390087367211429058
+    second: 2MediumSkate(up) 16F-comete_9
+  - first:
+      213: -5059250304157599977
+    second: 2MediumSkate(up) 16F-comete_10
+  - first:
+      213: 7410498682031390886
+    second: 2MediumSkate(up) 16F-comete_11
+  - first:
+      213: -359171660270466164
+    second: 2MediumSkate(up) 16F-comete_12
+  - first:
+      213: -4154303812086056685
+    second: 2MediumSkate(up) 16F-comete_13
+  - first:
+      213: -6848539548526994574
+    second: 2MediumSkate(up) 16F-comete_14
+  - first:
+      213: 2887933040175399983
+    second: 2MediumSkate(up) 16F-comete_15
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 33
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677cc4c1b48101c0800000000000000
+      internalID: -4539201050366937247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_1
+      rect:
+        serializedVersion: 2
+        x: 107
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d8300d67f36ac6e0800000000000000
+      internalID: -1816529585353770795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_2
+      rect:
+        serializedVersion: 2
+        x: 214
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2916f2452feead9a0800000000000000
+      internalID: -6207386411814919790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_3
+      rect:
+        serializedVersion: 2
+        x: 321
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cd66e3e3ad7fb520800000000000000
+      internalID: 2720030842811739588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_4
+      rect:
+        serializedVersion: 2
+        x: 428
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db14ff943bd7ccda0800000000000000
+      internalID: -5923221200904961603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_5
+      rect:
+        serializedVersion: 2
+        x: 535
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4152953b5bb0e7e70800000000000000
+      internalID: 9114735570870412564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_6
+      rect:
+        serializedVersion: 2
+        x: 642
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55756746569a54f10800000000000000
+      internalID: 2253393441511069525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_7
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a06482238da7f4930800000000000000
+      internalID: 4129654452295058954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_8
+      rect:
+        serializedVersion: 2
+        x: 856
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58ce9c24e1363ac80800000000000000
+      internalID: -8312691505575105403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_9
+      rect:
+        serializedVersion: 2
+        x: 963
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33d6a94569d157a0800000000000000
+      internalID: -6390087367211429058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_10
+      rect:
+        serializedVersion: 2
+        x: 1070
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71736e647aee9c9b0800000000000000
+      internalID: -5059250304157599977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_11
+      rect:
+        serializedVersion: 2
+        x: 1177
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a04bfee94167d660800000000000000
+      internalID: 7410498682031390886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_12
+      rect:
+        serializedVersion: 2
+        x: 1284
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b01382747f30bf0800000000000000
+      internalID: -359171660270466164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_13
+      rect:
+        serializedVersion: 2
+        x: 1391
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3193f8f71b2f856c0800000000000000
+      internalID: -4154303812086056685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_14
+      rect:
+        serializedVersion: 2
+        x: 1498
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b95d3d09915f0a0800000000000000
+      internalID: -6848539548526994574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 2MediumSkate(up) 16F-comete_15
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 0
+        width: 107
+        height: 106
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f24c4c29ccff31820800000000000000
+      internalID: 2887933040175399983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
