@@ -1,19 +1,22 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 public class SelectScreen : Screen
 {
     [SerializeField]
+    private Skateboard[] m_skateboards;
+    [SerializeField]
     private SpriteRenderer m_cursor;
     [SerializeField]
     private Row<Transform>[] m_selectGridPosition;
     [SerializeField]
-    private Row<RuntimeAnimatorController>[] m_animatorControllers;
+    private Row<SkateColor>[] m_selectColorEnum;
     private int m_currentX;
     private int m_currentY;
     private int m_dirX;
     private int m_dirY;
+    private bool m_toBypass;
     private int m_numberOfRows;
-    private bool m_toPause;
 
     private Timer m_timer;
 
@@ -24,7 +27,6 @@ public class SelectScreen : Screen
         m_currentY = 0;
         m_dirX = 0;
         m_dirY = 0;
-        m_toPause = true;
         m_numberOfRows = m_selectGridPosition.Length;
         m_timer = GetComponent<Timer>();
         Deactivate();
@@ -32,8 +34,8 @@ public class SelectScreen : Screen
 
     protected override void Deactivate()
     {
+        m_timer.StopAndUnbind();
         gameObject.SetActive(false);
-        //m_timer.StopAndUnbind();
     }
 
     public override void Begin()
@@ -41,7 +43,7 @@ public class SelectScreen : Screen
         m_isSkipped = false;
         gameObject.SetActive(true);
         m_timer.RegisterCallbackEveryTick(0.25f, PollGridDirection);
-        m_timer.Restart(true);
+        m_timer.Restart();
     }
 
     protected override void Exit()
@@ -52,28 +54,40 @@ public class SelectScreen : Screen
 
     public override void DoUpdate()
     {
-        int x = Mathf.CeilToInt(Input.GetAxis("Horizontal")) + Mathf.FloorToInt(Input.GetAxis("Horizontal"));
-        int y = Mathf.CeilToInt(Input.GetAxis("Vertical")) + Mathf.FloorToInt(Input.GetAxis("Vertical"));
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
         if ((x != 0 && m_dirX == 0) || (y != 0 && m_dirY == 0))
         {
-            m_toPause = false;
-            m_timer.Resume();
+            m_toBypass = false;
             PollGridDirection();
+            m_timer.Resume();
         }
-        else if (x == 0 && y == 0 && m_timer.IsPaused)
+        else if (x == 0 && y == 0 && !m_timer.IsPaused)
         {
-            m_toPause = true;
+            m_dirX = m_dirY = 0;
+            m_toBypass = true;
+            m_timer.Pause();
         }
-        //bool select = Input.GetButtonDown("Fire1");
+        if (!Input.GetButtonDown("Fire1"))
+            return;
+        if (m_selectColorEnum == null && m_currentY >= m_selectColorEnum.Length || m_selectColorEnum[m_currentY] == null)
+            return;
+        var row = m_selectColorEnum[m_currentY];
+        if (row.m_column == null || m_currentX >= row.m_column.Length || row.m_column[m_currentX] == SkateColor.None)
+            return;
+        foreach(Skateboard skate in m_skateboards)
+            skate.SetColor(row.m_column[m_currentX]);
+        m_isSkipped = true;
+        Exit();
     }
 
     private void PollGridDirection()
     {
-        if (m_toPause)
-            m_timer.Pause();
+        if (m_toBypass)
+            return;
 
-        m_dirX = Mathf.CeilToInt(Input.GetAxis("Horizontal")) + Mathf.FloorToInt(Input.GetAxis("Horizontal"));
-        m_dirY = Mathf.CeilToInt(Input.GetAxis("Vertical")) + Mathf.FloorToInt(Input.GetAxis("Vertical"));
+        m_dirX = (int)Input.GetAxisRaw("Horizontal");
+        m_dirY = (int)Input.GetAxisRaw("Vertical");
         var row = GetNearestRow(m_dirY);
         var item = GetNearestColumn(m_dirX, row);
         m_cursor.transform.position = item.position;

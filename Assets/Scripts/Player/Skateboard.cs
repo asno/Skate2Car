@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -25,27 +26,11 @@ public class Skateboard : MonoBehaviour
 
         Debug.Assert(m_characterAnimators != null, "Unexpected null reference to m_characterAnimators");
         Debug.Assert(m_characterAnimators.Length > 0, "Empty container m_characterAnimators");
+        Debug.Assert(m_animatorControllers != null, "Unexpected null reference to m_animatorControllers");
 
         m_characterAnimatorIterator = m_characterAnimators.GetEnumerator();
         m_characterAnimatorIterator.MoveNext();
         m_currentCharacterAnimator = m_characterAnimatorIterator.Current as Animator;
-    }
-
-    void Update()
-    {
-        if (m_animatorControllers == null)
-            return;
-
-        int i = -1;
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-            i = 0;
-        if (Input.GetKeyDown(KeyCode.Alpha2))
-            i = 1;
-        if (i >= 0)
-        {
-            m_animatorOverrideController = new AnimatorOverrideController(m_animatorControllers[i]);
-            m_animator.runtimeAnimatorController = m_animatorOverrideController;
-        }
     }
 
     public void Reset()
@@ -70,6 +55,13 @@ public class Skateboard : MonoBehaviour
             m_currentCharacterAnimator.gameObject.SetActive(true);
         }
         return hasMovedToNextCharacter;
+    }
+
+    internal void SetColor(SkateColor aSkateColor)
+    {
+        int colorIndex = (int)aSkateColor;
+        m_animatorOverrideController = new AnimatorOverrideController(m_animatorControllers[colorIndex]);
+        m_animator.runtimeAnimatorController = m_animatorOverrideController;
     }
 
     public void PlayAnimation(string aState)

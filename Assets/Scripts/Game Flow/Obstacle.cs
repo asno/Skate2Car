@@ -36,7 +36,7 @@ public class Obstacle : MonoBehaviour
 
     private void Start()
     {
-        m_scrollWidth = (704f - m_spriteSliceWidthInPixel) / 33f;
+        m_scrollWidth = 704f / 33f;
         m_spriteSliceWidthInUUnit = m_spriteSliceWidthInPixel / 33f;
         m_screenLeftX = 0 - (704f / 2f / 33f);
     }
