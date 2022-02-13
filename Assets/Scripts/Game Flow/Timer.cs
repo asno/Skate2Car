@@ -74,7 +74,7 @@ public class Timer : MonoBehaviour
 
         OnPause = null;
         OnResume = null;
-        m_ticksEvents.ForEach(co => StopCoroutine(co));
+        m_ticksEvents.ForEach(co => { if (co != null) StopCoroutine(co); });
         m_ticksEvents.Clear();
         m_tickCallsDispatcher.Clear();
     }

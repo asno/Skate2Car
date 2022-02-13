@@ -650,7 +650,7 @@ MonoBehaviour:
   m_sequences:
   - {fileID: 4973712328364044573}
   - {fileID: 4168534111989126339}
-  - {fileID: 4168534111871962327}
+  - {fileID: 414327208}
   - {fileID: 4168534111087312347}
   - {fileID: 1044224531470944094}
   - {fileID: 4168534112066168232}
@@ -758,7 +758,7 @@ MonoBehaviour:
   m_sequences:
   - {fileID: 4973712328364044573}
   - {fileID: 4168534112385123480}
-  - {fileID: 1044224531608103423}
+  - {fileID: 425559698}
   - {fileID: 1044224531851967893}
   - {fileID: 1044224531905299632}
   - {fileID: 4168534112370307264}
@@ -789,7 +789,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044224531204633165}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.75, y: 0.049999952, z: 0}
+  m_LocalPosition: {x: 3.75, y: -0.73, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8979095244706628111}
@@ -834,7 +834,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 4278580342466787862, guid: 61400fbf4dc0b374e97203c1fb948f24, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -993,7 +993,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1044224531608103416}
-  - component: {fileID: 1044224531608103423}
+  - component: {fileID: 425559698}
   m_Layer: 0
   m_Name: SkateGrow
   m_TagString: Untagged
@@ -1015,7 +1015,7 @@ Transform:
   m_Father: {fileID: 1044224530939118545}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1044224531608103423
+--- !u!114 &425559698
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1024,12 +1024,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 1044224531608103417}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5e112f3f90f43478a1de59e473cb18, type: 3}
+  m_Script: {fileID: 11500000, guid: 8495ee39c6385fa47b5be0feb9f9b452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isAsynchronous: 0
-  m_animator: {fileID: 0}
-  m_state: Grow
+  m_isAsynchronous: 1
+  m_invokeMethod:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Skateboard, Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Grow
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1044224531788808047
 GameObject:
   m_ObjectHideFlags: 0
@@ -2138,7 +2151,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4168534111871962324}
-  - component: {fileID: 4168534111871962327}
+  - component: {fileID: 414327208}
   m_Layer: 0
   m_Name: SkateGrow
   m_TagString: Untagged
@@ -2160,7 +2173,7 @@ Transform:
   m_Father: {fileID: 1044224530802993539}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4168534111871962327
+--- !u!114 &414327208
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2169,12 +2182,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 4168534111871962325}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fa5e112f3f90f43478a1de59e473cb18, type: 3}
+  m_Script: {fileID: 11500000, guid: 8495ee39c6385fa47b5be0feb9f9b452, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isAsynchronous: 0
-  m_animator: {fileID: 0}
-  m_state: Grow
+  m_isAsynchronous: 1
+  m_invokeMethod:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: Skateboard, Assembly-CSharp
+        m_MethodName: PlayAnimation
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Grow
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4168534111989126337
 GameObject:
   m_ObjectHideFlags: 0

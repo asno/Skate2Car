@@ -30,6 +30,8 @@ public class GameScreen : Screen
 
     public override void Begin()
     {
+        AudioManager.Instance.PlayBGM();
+
         m_isSkipped = false;
         m_scoreInstance = Score.Instance;
         DecorManager.Instance.CurrentDecor.ResumeScrolling();
@@ -48,6 +50,7 @@ public class GameScreen : Screen
         base.Exit();
         Deactivate();
         m_isSkipped = true;
+        AudioManager.Instance.StopBGM();
     }
 
     public override void DoUpdate()

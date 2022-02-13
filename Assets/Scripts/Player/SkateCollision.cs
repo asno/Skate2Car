@@ -44,6 +44,7 @@ public class SkateCollision : CharacterCollision
     {
         m_isJumping = true;
         m_isShaking = false;
+        AudioManager.Instance.PlayJump();
     }
 
     void OnJumpStop()

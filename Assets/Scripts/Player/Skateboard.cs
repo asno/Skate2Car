@@ -7,26 +7,20 @@ public class Skateboard : MonoBehaviour
     [SerializeField]
     private Animator[] m_characterAnimators;
     [SerializeField]
-    private RuntimeAnimatorController[] m_animatorControllers;
-    protected AnimatorOverrideController m_animatorOverrideController;
+    private GameObject[] m_spriteObjects;
 
+    private Animator m_animator;
     private IEnumerator m_characterAnimatorIterator;
     private Animator m_currentCharacterAnimator;
-    private Animator m_animator;
     private SkateCollision m_skateCollision;
 
     public SkateCollision Collision { get => m_skateCollision; }
 
     void Awake()
     {
-        m_animator = GetComponent<Animator>();
-        Debug.Assert(m_animator != null, "Unexpected null reference to m_animator");
-        m_skateCollision = GetComponent<SkateCollision>();
-        Debug.Assert(m_skateCollision != null, "Unexpected null reference to m_skateCollision");
-
         Debug.Assert(m_characterAnimators != null, "Unexpected null reference to m_characterAnimators");
         Debug.Assert(m_characterAnimators.Length > 0, "Empty container m_characterAnimators");
-        Debug.Assert(m_animatorControllers != null, "Unexpected null reference to m_animatorControllers");
+        Debug.Assert(m_spriteObjects != null, "Unexpected null reference to m_spriteObjects");
 
         m_characterAnimatorIterator = m_characterAnimators.GetEnumerator();
         m_characterAnimatorIterator.MoveNext();
@@ -60,8 +54,12 @@ public class Skateboard : MonoBehaviour
     internal void SetColor(SkateColor aSkateColor)
     {
         int colorIndex = (int)aSkateColor;
-        m_animatorOverrideController = new AnimatorOverrideController(m_animatorControllers[colorIndex]);
-        m_animator.runtimeAnimatorController = m_animatorOverrideController;
+        foreach (var spriteObject in m_spriteObjects)
+            spriteObject.SetActive(false);
+
+        m_spriteObjects[colorIndex].SetActive(true);
+        m_animator = m_spriteObjects[colorIndex].GetComponent<Animator>();
+        m_skateCollision = m_spriteObjects[colorIndex].GetComponent<SkateCollision>();
     }
 
     public void PlayAnimation(string aState)

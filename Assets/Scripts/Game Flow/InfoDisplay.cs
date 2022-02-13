@@ -1,21 +1,31 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class InfoDisplay : MonoBehaviour
 {
+    private static InfoDisplay _instance;
+
     [SerializeField]
     private Text m_timer;
     [SerializeField]
     private Text m_score;
     [SerializeField]
     private Text m_fps;
+    [SerializeField]
+    private Text m_logs;
+
+    public static InfoDisplay Instance { get => _instance ??= FindObjectOfType<InfoDisplay>(); }
+
     private Score m_scoreInstance;
+    private List<string> m_logsLines;
 
     private Game m_game;
     private readonly string TIMER = "Timer: {0}";
     private readonly string SCORE = "Score: {0}";
     private readonly string FPS = "FPS: {0}";
+    private readonly int MAX_LINES_OF_LOGS = 5;
 
     void Awake()
     {
@@ -44,5 +54,19 @@ public class InfoDisplay : MonoBehaviour
     {
         var fps = (int)(1f / Time.unscaledDeltaTime);
         m_fps.text = string.Format(FPS, fps);
+    }
+
+    public static void Log(string aMessage)
+    {
+        var lines = Instance.m_logsLines ??= new List<string>(_instance.MAX_LINES_OF_LOGS);
+        if(lines.Count >= Instance.MAX_LINES_OF_LOGS)
+            lines.RemoveAt(0);
+
+        TimeSpan time = TimeSpan.FromSeconds(Time.realtimeSinceStartup);
+        string newLine = $"{time.ToString("hh':'mm':'ss")} > {aMessage}";
+        lines.Add(newLine);
+
+        Instance.m_logs.text = string.Join("\n", lines);
+        Debug.Log(aMessage);
     }
 }

@@ -30,6 +30,7 @@ public class CarController : CharacterController2D
 
     public override void Reset()
     {
+        m_rigidbody ??= GetComponent<Rigidbody2D>();
         m_rigidbody.isKinematic = true;
         transform.position = m_initialPosition;
         m_rigidbody.velocity = Vector2.zero;

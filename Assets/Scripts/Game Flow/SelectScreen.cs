@@ -1,4 +1,3 @@
-using System.Collections.Generic;
 using UnityEngine;
 
 public class SelectScreen : Screen
@@ -75,8 +74,11 @@ public class SelectScreen : Screen
         var row = m_selectColorEnum[m_currentY];
         if (row.m_column == null || m_currentX >= row.m_column.Length || row.m_column[m_currentX] == SkateColor.None)
             return;
-        foreach(Skateboard skate in m_skateboards)
-            skate.SetColor(row.m_column[m_currentX]);
+
+        AudioManager.Instance.PlayColorSelect();
+        m_skateboards[0].SetColor(row.m_column[m_currentX]);
+        foreach (Skateboard skate in m_skateboards)
+            skate.SetColor(m_selectColorEnum[m_currentY].m_column[m_currentX]);
         m_isSkipped = true;
         Exit();
     }

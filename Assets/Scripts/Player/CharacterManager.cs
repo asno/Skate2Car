@@ -41,7 +41,9 @@ public class CharacterManager : MonoBehaviour
     public void Reset()
     {
         foreach (var c in m_characterControllers)
+        {
             c.Reset();
+        }
         m_characterControllerIterator.Reset();
         PickNextCharacterController();
     }

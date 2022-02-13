@@ -5,6 +5,8 @@ public abstract class CharacterController2D : MonoBehaviour
 {
     [SerializeField]
     private float m_moveSpeed = 1;
+    [SerializeField]
+    protected Vector3 m_initialPosition;
 
     private int m_floorMask;
     private int m_ceilMask;
@@ -14,7 +16,6 @@ public abstract class CharacterController2D : MonoBehaviour
     private bool m_canControl = true;
 
     protected PlayerAction m_currentPlayerAction;
-    protected Vector3 m_initialPosition;
     protected Rigidbody2D m_rigidbody;
 
     public bool CanControl { get => m_canControl; set => m_canControl = value; }
@@ -41,8 +42,6 @@ public abstract class CharacterController2D : MonoBehaviour
 
     protected virtual void Awake()
     {
-        m_initialPosition = transform.position;
-
         Debug.Assert(m_moveSpeed > 0, "Zero or negative m_moveSpeed");
 
         m_rigidbody = GetComponent<Rigidbody2D>();

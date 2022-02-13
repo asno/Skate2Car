@@ -3,6 +3,7 @@ using System.Linq;
 using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Collections;
 
 public class Game : MonoBehaviour
 {
@@ -19,6 +20,7 @@ public class Game : MonoBehaviour
     private Screen m_screen;
 
     private bool m_isPaused;
+    private bool m_canRandomizeBonusSpawn;
     private float m_scrollingSpeed;
     private CharacterManager m_characterManager;
     private Obstacle[] m_obstacles;
@@ -27,10 +29,10 @@ public class Game : MonoBehaviour
     private Queue<float> m_spawningTime;
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
+    private BonusManager m_bonusManager;
     private Timer m_timer;
 
     public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
-
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
     public Timer @Timer { get => m_timer; }
 
@@ -47,6 +49,8 @@ public class Game : MonoBehaviour
         m_obstacles = GetComponentsInChildren<Obstacle>(true);
         m_timer = GetComponent<Timer>();
         Debug.Assert(m_timer != null, "Unexpected null reference to m_timerInstance");
+        m_bonusManager = GetComponentInChildren<BonusManager>();
+        Debug.Assert(m_bonusManager != null, "Unexpected null reference to m_bonusManager");
 
         LoadGameSetupFile();
 
@@ -69,6 +73,13 @@ public class Game : MonoBehaviour
             return;
 
         m_screen.GetCurrentScreen().DoUpdate();
+
+        if (m_canRandomizeBonusSpawn)
+        {
+            m_canRandomizeBonusSpawn = false;
+            float spawnTime = UnityEngine.Random.Range(0.5f, 5.5f);
+            StartCoroutine(SpawnBonus(spawnTime));
+        }
 
         if (m_spawningTime != null && m_spawningTime.Count > 0)
         {
@@ -103,6 +114,20 @@ public class Game : MonoBehaviour
         }
     }
 
+    private IEnumerator SpawnBonus(float aDelay)
+    {
+        yield return new WaitForSeconds(aDelay);
+        while(m_timer.IsPaused)
+        {
+            yield return null;
+        }
+        if (m_bonusManager.enabled)
+        {
+            m_bonusManager.SpawnBonus();
+            m_canRandomizeBonusSpawn = true;
+        }
+    }
+
     void OnApplicationFocus(bool hasFocus)
     {
         m_isPaused = !hasFocus;
@@ -121,9 +146,12 @@ public class Game : MonoBehaviour
         foreach (var o in m_obstacles)
             o.Reset();
         m_characterManager.Reset();
+        m_bonusManager.Reset();
         Score.Instance.Reset();
         DecorManager.Instance.Reset();
         CinematicManager.Instance.Reset();
+
+        m_canRandomizeBonusSpawn = m_bonusManager.enabled;
     }
 
     private void InitializeQueues()
