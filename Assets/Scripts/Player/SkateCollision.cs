@@ -33,6 +33,7 @@ public class SkateCollision : CharacterCollision
     void OnBecomingAirborne()
     {
         m_collider.enabled = false;
+        AudioManager.Instance.PlayJump();
     }
 
     void OnLanding()
@@ -44,7 +45,6 @@ public class SkateCollision : CharacterCollision
     {
         m_isJumping = true;
         m_isShaking = false;
-        AudioManager.Instance.PlayJump();
     }
 
     void OnJumpStop()

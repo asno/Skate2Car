@@ -3,6 +3,8 @@ using UnityEngine;
 public class Obstacle : MonoBehaviour
 {
     [SerializeField]
+    private Sprite[] m_spriteVariations;
+    [SerializeField]
     private float m_spriteSliceWidthInPixel;
     [SerializeField]
     private bool m_isFlat;
@@ -10,6 +12,7 @@ public class Obstacle : MonoBehaviour
     private int m_penaltyScorePoints;
     [SerializeField]
     private Transform m_playerTransform;
+
     private Vector3 m_initialPosition;
     private SpriteRenderer m_spriteRenderer;
     private Collider2D m_collider;
@@ -68,6 +71,11 @@ public class Obstacle : MonoBehaviour
 
     public void Reset()
     {
+        if (m_spriteVariations != null && m_spriteVariations.Length > 0)
+        {
+            int index = Random.Range(0, m_spriteVariations.Length);
+            m_spriteRenderer.sprite = m_spriteVariations[index];
+        }
         if (m_animator != null)
             m_animator.Play("Idle");
         m_isScrolling = false;

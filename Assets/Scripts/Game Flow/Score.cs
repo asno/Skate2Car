@@ -9,7 +9,7 @@ public class Score
 
     private const int POINT_PER_TENTH_SECOND = 100;
     private const int MIN_POINTS = 0;
-    private const int MAX_POINTS = 150000;
+    private const int MAX_POINTS = int.MaxValue;
     private readonly Dictionary<Tuple<int, int>, string> SCORE_TO_MSG_MAPPING = new Dictionary<Tuple<int, int>, string>()
     {
         { new Tuple<int, int>(MIN_POINTS, 59999), "VOUS POUVEZ ENCORE VOUS AMELIORER." },

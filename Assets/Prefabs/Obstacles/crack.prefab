@@ -96,6 +96,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df636b95a1a017b40ac59891df86f462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_spriteVariations:
+  - {fileID: 21300000, guid: 76924cd88650eed45a9feaaea7aceb94, type: 3}
+  - {fileID: 21300000, guid: 52df317a5c2fbd546a67a0df10e05e94, type: 3}
   m_spriteSliceWidthInPixel: 88
   m_isFlat: 1
   m_penaltyScorePoints: -1500

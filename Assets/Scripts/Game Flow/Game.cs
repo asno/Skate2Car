@@ -49,8 +49,6 @@ public class Game : MonoBehaviour
         m_obstacles = GetComponentsInChildren<Obstacle>(true);
         m_timer = GetComponent<Timer>();
         Debug.Assert(m_timer != null, "Unexpected null reference to m_timerInstance");
-        m_bonusManager = GetComponentInChildren<BonusManager>();
-        Debug.Assert(m_bonusManager != null, "Unexpected null reference to m_bonusManager");
 
         LoadGameSetupFile();
 
@@ -145,8 +143,9 @@ public class Game : MonoBehaviour
         InitializeQueues();
         foreach (var o in m_obstacles)
             o.Reset();
-        m_characterManager.Reset();
+        m_bonusManager = GetComponentInChildren<BonusManager>();
         m_bonusManager.Reset();
+        m_characterManager.Reset();
         Score.Instance.Reset();
         DecorManager.Instance.Reset();
         CinematicManager.Instance.Reset();
@@ -178,6 +177,7 @@ public class Game : MonoBehaviour
     {
         DecorManager.Instance.PickNextDecor();
         m_characterManager.PickNextCharacterController();
+        m_bonusManager = GetComponentInChildren<BonusManager>();
     }
 
     private void LoadGameSetupFile()
