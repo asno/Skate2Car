@@ -21,7 +21,6 @@ public class Game : MonoBehaviour
 
     private bool m_isPaused;
     private bool m_canRandomizeBonusSpawn;
-    private float m_scrollingSpeed;
     private CharacterManager m_characterManager;
     private Obstacle[] m_obstacles;
     private Queue<Obstacle> m_obstaclesQueue;
@@ -30,6 +29,7 @@ public class Game : MonoBehaviour
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
     private BonusManager m_bonusManager;
+    private PropSpawner m_animalPropSpawner;
     private Timer m_timer;
 
     public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
@@ -52,15 +52,14 @@ public class Game : MonoBehaviour
 
         LoadGameSetupFile();
 
-        m_scrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
-        DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup);
-
-        m_screen.Initialize();
+        Global.ScrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
+        DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup, m_gameSetup.PropSpawnerSetup);
         InitializeQueues();
     }
 
     void Start()
     {
+        m_screen.Initialize();
         m_screen.Begin();
     }
 
@@ -98,7 +97,7 @@ public class Game : MonoBehaviour
                 var pos = obstacle.transform.position;
                 pos.y = bid.Item2;
                 obstacle.transform.position = pos;
-                obstacle.StartScrolling(m_scrollingSpeed);
+                obstacle.StartScrolling();
             }
         }
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
@@ -163,6 +162,7 @@ public class Game : MonoBehaviour
             m_spawningTime = new Queue<float>(m_gameSetup.ObstacleSetup.Select(o => o.Time));
         }
     }
+
     public void StopGame()
     {
         DecorManager.Instance.CurrentDecor.PauseScrolling();

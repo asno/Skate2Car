@@ -122,9 +122,3 @@ public class SelectScreen : Screen
         return column;
     }
 }
-
-[System.Serializable]
-public class Row<T>
-{
-    public T[] m_column;
-}
