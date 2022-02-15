@@ -47,7 +47,7 @@ public class DecorManager : MonoBehaviour
     public void Reset()
     {
         foreach (Decor decor in m_decors)
-            decor.PauseScrolling();
+            decor.Reset();
 
         m_decorIterator.Reset();
         PickNextDecor();
@@ -65,9 +65,34 @@ public class DecorManager : MonoBehaviour
         }
     }
 
-    internal void Initialize(ScrollingSetup aScrollingSetup)
+    internal void Initialize(ScrollingSetup aScrollingSetup, PropSpawnerSetup[] aPropSpawnerSetup = null)
     {
         foreach(Decor decor in m_decors)
+        {
             decor.Set(aScrollingSetup);
+
+            if (aPropSpawnerSetup == null)
+                continue;
+
+            foreach(var propSpawnerSetup in aPropSpawnerSetup)
+            {
+                if (decor.tag == propSpawnerSetup.Stage)
+                {
+                    KeyValuePair<float, float> timeRange = new KeyValuePair<float, float>(propSpawnerSetup.RandomMin, propSpawnerSetup.RandomMax);
+                    KeyValuePair<PropSpawnModel, int>[] setup = new KeyValuePair<PropSpawnModel, int>[propSpawnerSetup.ArrayOfProps.Length];
+                    for(int i = 0; i < setup.Length; i++)
+                    {
+                        PropSetup propSetup = propSpawnerSetup.ArrayOfProps[i];
+                        setup[i] = new KeyValuePair<PropSpawnModel, int>(propSetup.Prop, propSetup.Instances);
+                    }
+                    decor.InstantiateSpawner(timeRange, setup);
+                }
+            }
+        }
+    }
+
+    private void InitiliazePropSpawners()
+    {
+
     }
 }

@@ -20,8 +20,7 @@ public class Obstacle : MonoBehaviour
     private float m_colliderBottomY;
     private float m_scrollWidth;
     private float m_spriteSliceWidthInUUnit;
-    private float m_screenLeftX;
-    private float m_scrollingSpeed;
+    private float m_screenLeft;
     private bool m_isScrolling = false;
 
     void Awake()
@@ -37,11 +36,11 @@ public class Obstacle : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private void Start()
+    void Start()
     {
-        m_scrollWidth = 704f / 33f;
+        m_scrollWidth = Global.ScreenWidthInUUnit;
         m_spriteSliceWidthInUUnit = m_spriteSliceWidthInPixel / 33f;
-        m_screenLeftX = 0 - (704f / 2f / 33f);
+        m_screenLeft = Global.ScreenLeft;
     }
 
     internal void Hit()
@@ -57,12 +56,12 @@ public class Obstacle : MonoBehaviour
         if (!m_isFlat)
             m_spriteRenderer.sortingOrder = m_playerTransform.position.y < m_colliderBottomY ? 2 : 5;
 
-        if (transform.position.x + m_spriteSliceWidthInUUnit < m_screenLeftX)
+        if (transform.position.x + m_spriteSliceWidthInUUnit < m_screenLeft)
             Reset();
 
         if (m_isScrolling)
         {
-            var horizontalMove = Time.deltaTime * m_scrollingSpeed * m_scrollWidth;
+            var horizontalMove = Time.deltaTime * 1 / Global.ScrollingSpeed * m_scrollWidth;
             var pos = transform.position;
             pos.x -= horizontalMove;
             transform.position = pos;
@@ -84,12 +83,11 @@ public class Obstacle : MonoBehaviour
 
     }
 
-    public void StartScrolling(float aScrollingSpeed)
+    public void StartScrolling()
     {
         Debug.Assert(!m_isScrolling, $"{transform.name} is already used for scrolling");
         Vector2 pos2D = transform.position;
         m_colliderBottomY = (pos2D + m_collider.offset).y - m_collider.bounds.extents.y;
-        m_scrollingSpeed = aScrollingSpeed;
         m_isScrolling = true;
     }
 }

@@ -5,6 +5,8 @@ public class AudioManager : MonoBehaviour
     private static AudioManager _instance;
 
     [SerializeField]
+    private bool m_muteAudio = false;
+    [SerializeField]
     AudioSource m_bgm;
     [SerializeField]
     AudioSource m_sfxColor;
@@ -25,7 +27,7 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBGM()
     {
-        m_bgm.Play();
+        PlayAudioSource(m_bgm);
     }
 
     public void StopBGM()
@@ -35,16 +37,22 @@ public class AudioManager : MonoBehaviour
 
     public void PlayColorSelect()
     {
-        m_sfxColor.Play();
+        PlayAudioSource(m_sfxColor);
     }
 
     public void PlayJump()
     {
-        m_sfxJump.Play();
+        PlayAudioSource(m_sfxJump);
     }
 
     public void PlayBonusPick()
     {
-        m_sfxBonus.Play();
+        PlayAudioSource(m_sfxBonus);
+    }
+
+    private void PlayAudioSource(AudioSource aAudioSource)
+    {
+        if (!m_muteAudio)
+            aAudioSource.Play();
     }
 }
