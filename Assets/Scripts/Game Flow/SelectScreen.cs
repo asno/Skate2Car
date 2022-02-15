@@ -94,6 +94,7 @@ public class SelectScreen : Screen
         var row = GetNearestRow(m_dirY);
         var item = GetNearestColumn(m_dirX, row);
         m_cursor.transform.position = item.position;
+        AudioManager.Instance.PlayMenuCursor();
     }
 
     private Row<Transform> GetNearestRow(int aDirection)

@@ -9,6 +9,8 @@ public class AudioManager : MonoBehaviour
     [SerializeField]
     AudioSource m_bgm;
     [SerializeField]
+    AudioSource m_sfxMenu;
+    [SerializeField]
     AudioSource m_sfxColor;
     [SerializeField]
     AudioSource m_sfxJump;
@@ -20,6 +22,7 @@ public class AudioManager : MonoBehaviour
     void Awake()
     {
         Debug.Assert(m_bgm != null, "Unexpected null reference to m_bgm");
+        Debug.Assert(m_sfxMenu != null, "Unexpected null reference to m_sfxMenu");
         Debug.Assert(m_sfxColor != null, "Unexpected null reference to m_sfxColor");
         Debug.Assert(m_sfxJump != null, "Unexpected null reference to m_sfxJump");
         Debug.Assert(m_sfxBonus != null, "Unexpected null reference to m_sfxBonus");
@@ -33,6 +36,11 @@ public class AudioManager : MonoBehaviour
     public void StopBGM()
     {
         m_bgm.Stop();
+    }
+
+    public void PlayMenuCursor()
+    {
+        PlayAudioSource(m_sfxMenu);
     }
 
     public void PlayColorSelect()
