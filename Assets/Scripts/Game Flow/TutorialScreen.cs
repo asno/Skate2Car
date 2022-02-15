@@ -7,7 +7,6 @@ public class TutorialScreen : Screen
     [SerializeField]
     private SpriteRenderer m_image;
 
-    private Coroutine m_autoSkipProcess;
     private bool m_canPressToSkip;
 
     public override void Initialize()
@@ -18,7 +17,6 @@ public class TutorialScreen : Screen
 
     protected override void Deactivate()
     {
-        m_autoSkipProcess = null;
         m_canPressToSkip = false;
         m_image.gameObject.SetActive(false);
 
@@ -28,8 +26,8 @@ public class TutorialScreen : Screen
     {
         m_isSkipped = false;
         m_image.gameObject.SetActive(true);
-        StartCoroutine(Wait(2, EnablePressToSkip));
-        m_autoSkipProcess = StartCoroutine(Wait(30, SkipScreen));
+        base.Begin();
+        Invoke(nameof(EnablePressToSkip), 2f);
     }
 
     protected override void Exit()
@@ -37,15 +35,6 @@ public class TutorialScreen : Screen
         base.Exit();
         Reset();
         Deactivate();
-    }
-
-    public override void Reset()
-    {
-        if(m_autoSkipProcess != null)
-        {
-            StopCoroutine(m_autoSkipProcess);
-            m_autoSkipProcess = null;
-        }
     }
 
     public override void DoUpdate()
@@ -67,12 +56,5 @@ public class TutorialScreen : Screen
     private void EnablePressToSkip()
     {
         m_canPressToSkip = true;
-    }
-
-    private IEnumerator Wait(float aSeconds, Action aCallback = null)
-    {
-        yield return new WaitForSeconds(aSeconds);
-        if (aCallback != null)
-            aCallback();
     }
 }

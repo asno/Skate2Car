@@ -25,6 +25,7 @@ public class TitleScreen : Screen
         m_isSkipped = false;
         m_titleScreenAnimator.gameObject.SetActive(true);
         StartCoroutine(Play());
+        base.Begin();
     }
 
     protected override void Exit()

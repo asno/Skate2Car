@@ -33,8 +33,9 @@ public class ScoreScreen : Screen
         m_image.gameObject.SetActive(true);
         m_text.gameObject.SetActive(true);
         m_latestScoreupdated = Score.Instance.Points;
+        base.Begin();
 
-        Invoke(nameof(CanPressToSkip), 2f);
+        Invoke(nameof(EnablePressToSkip), 2f);
     }
 
     protected override void Exit()
@@ -43,7 +44,7 @@ public class ScoreScreen : Screen
         Deactivate();
     }
 
-    private void CanPressToSkip()
+    private void EnablePressToSkip()
     {
         m_canPressToSkip = true;
     }

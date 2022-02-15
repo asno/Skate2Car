@@ -43,6 +43,7 @@ public class SelectScreen : Screen
         gameObject.SetActive(true);
         m_timer.RegisterCallbackEveryTick(0.25f, PollGridDirection);
         m_timer.Restart();
+        base.Begin();
     }
 
     protected override void Exit()
