@@ -115,10 +115,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_spriteVariations: []
   m_spawnPoints:
-  - m_pathToSceneGameObject: deer up
-    m_point: {fileID: 0}
-    m_orderInLayer: -1
-    m_scrollingSpeedReduction: 0.8
   - m_pathToSceneGameObject: deer down
     m_point: {fileID: 0}
     m_orderInLayer: 5
