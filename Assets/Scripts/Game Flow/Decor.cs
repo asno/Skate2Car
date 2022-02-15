@@ -31,7 +31,10 @@ public class Decor : MonoBehaviour
         m_scrollingRoad.IsPaused = true;
 
         foreach (var propSpawner in m_propSpawners)
-            propSpawner.End();
+        {
+            propSpawner.PausePropsScrolling();
+            propSpawner.PauseSpawning();
+        }
     }
 
     public void ResumeScrolling()
@@ -42,7 +45,23 @@ public class Decor : MonoBehaviour
         m_scrollingRoad.IsPaused = false;
 
         foreach (var propSpawner in m_propSpawners)
-            propSpawner.Begin();
+        {
+            propSpawner.ResumePropsScrolling();
+            propSpawner.ResumeSpawning();
+        }
+    }
+
+    public void SuspendNewSpawnings()
+    {
+        foreach (var propSpawner in m_propSpawners)
+            propSpawner.PauseSpawning();
+    }
+
+    public void Reset()
+    {
+        PauseScrolling();
+        foreach (var propSpawner in m_propSpawners)
+            propSpawner.End();
     }
 
     public void InstantiateSpawner(KeyValuePair<float, float> aTimeRange, KeyValuePair<PropSpawnModel, int>[] aSetup)

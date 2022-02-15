@@ -47,7 +47,7 @@ public class DecorManager : MonoBehaviour
     public void Reset()
     {
         foreach (Decor decor in m_decors)
-            decor.PauseScrolling();
+            decor.Reset();
 
         m_decorIterator.Reset();
         PickNextDecor();

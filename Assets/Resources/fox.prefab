@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8039371141821241392}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -400, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -113,14 +113,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3dd18c3a9bf7c79408d002c4c32696e7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_spriteVariations: []
   m_spawnPoints:
   - m_pathToSceneGameObject: fox up
     m_point: {fileID: 0}
     m_orderInLayer: -1
+    m_scrollingSpeedReduction: 0.6
   - m_pathToSceneGameObject: fox down
     m_point: {fileID: 0}
     m_orderInLayer: 5
-  m_scrollingSpeedReduction: 0.6
+    m_scrollingSpeedReduction: 0.45
   m_spriteRenderer: {fileID: 8039371141821241395}
 --- !u!95 &4309604453460942915
 Animator:

@@ -52,7 +52,7 @@ public class Game : MonoBehaviour
 
         LoadGameSetupFile();
 
-        Global.ScrollingSpeed = 1.0f / m_gameSetup.ScrollingSetup.Road;
+        Global.ScrollingSpeed = m_gameSetup.ScrollingSetup.Road;
         DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup, m_gameSetup.PropSpawnerSetup);
         InitializeQueues();
     }

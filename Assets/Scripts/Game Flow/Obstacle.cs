@@ -61,7 +61,7 @@ public class Obstacle : MonoBehaviour
 
         if (m_isScrolling)
         {
-            var horizontalMove = Time.deltaTime * Global.ScrollingSpeed * m_scrollWidth;
+            var horizontalMove = Time.deltaTime * 1 / Global.ScrollingSpeed * m_scrollWidth;
             var pos = transform.position;
             pos.x -= horizontalMove;
             transform.position = pos;

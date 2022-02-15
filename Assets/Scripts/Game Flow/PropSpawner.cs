@@ -7,16 +7,16 @@ public class PropSpawner : MonoBehaviour
 {
     private KeyValuePair<float, List<Prop>>[] m_props;
     private KeyValuePair<float, float> m_timeRange;
-    private Timer m_timer;
     private List<Prop> m_propsSpawned = new List<Prop>();
+    private Timer m_timer;
     private float m_biggestWeight;
-    private bool m_isStarted;
+    private bool m_isPaused;
     private bool m_canRandomizeSpawn;
 
     void Awake()
     {
         m_timer = Game.Instance.Timer;
-        m_isStarted = false;
+        m_isPaused = false;
         m_canRandomizeSpawn = false;
     }
 
@@ -25,23 +25,51 @@ public class PropSpawner : MonoBehaviour
         m_timeRange = aTimeRange;
         m_props = aProps;
         m_biggestWeight = m_props.Aggregate((i, j) => i.key > j.key ? i : j).key;
+
+        foreach(var propsList in m_props)
+            propsList.value.ForEach(p => p.OnPropReset += ClearOutProp);
     }
 
     public void Reset()
     {
+        StopAllCoroutines();
+
         foreach(var prop in m_props)
             prop.value.ForEach(p => p.Reset());
     }
 
-    public void Begin()
+    public void End()
     {
-        m_isStarted = m_canRandomizeSpawn = true;
+        m_canRandomizeSpawn = false;
+        m_isPaused = true;
         Reset();
     }
 
-    public void End()
+    public void ResumePropsScrolling()
     {
-        m_isStarted = m_canRandomizeSpawn = false;
+        m_propsSpawned.ForEach(p => p.Resume());
+    }
+
+    public void PausePropsScrolling()
+    {
+        m_propsSpawned.ForEach(p => p.Pause());
+    }
+
+    public void PauseSpawning()
+    {
+        m_canRandomizeSpawn = false;
+        m_isPaused = true;
+    }
+
+    public void ResumeSpawning()
+    {
+        m_canRandomizeSpawn = true;
+        m_isPaused = false;
+    }
+
+    private void ClearOutProp(Prop aProp)
+    {
+        m_propsSpawned.Remove(aProp);
     }
 
     private void SpawnProp()
@@ -50,31 +78,31 @@ public class PropSpawner : MonoBehaviour
         var pool = m_props.Where(p => p.key >= weight).ToArray();
         var props = pool.ElementAt(Random.Range(0, pool.Count())).value;
         bool canSpawn = false;
-        Prop prop;
+        Prop prop = null;
         int index = 0;
-        do
+        while (!canSpawn && index < props.Count)
         {
             prop = props[index];
             canSpawn = !prop.IsScrolling;
             index++;
-
-        } while (!canSpawn && index >= props.Count);
+        } 
 
         if (canSpawn)
         {
+            m_propsSpawned.Add(prop);
             prop.Spawn();
         }
     }
 
     void Update()
     {
-        if (!m_isStarted)
+        if (m_isPaused)
             return;
 
         if (m_canRandomizeSpawn)
         {
             m_canRandomizeSpawn = false;
-            float spawnTime = UnityEngine.Random.Range(m_timeRange.key, m_timeRange.value);
+            float spawnTime = Random.Range(m_timeRange.key, m_timeRange.value);
             StartCoroutine(SpawnProcess(spawnTime));
         }
     }
@@ -82,10 +110,6 @@ public class PropSpawner : MonoBehaviour
     private IEnumerator SpawnProcess(float aDelay)
     {
         yield return new WaitForSeconds(aDelay);
-        while (m_timer.IsPaused)
-        {
-            yield return null;
-        }
         if (enabled)
         {
             SpawnProp();
