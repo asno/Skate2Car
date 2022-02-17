@@ -8,6 +8,7 @@ public class SkateController : CharacterController2D
 
     private Skateboard m_currentSkateboard;
     private IEnumerator m_skateboardIterator;
+    private Animator m_animator;
 
     protected override void Awake()
     {
@@ -19,6 +20,7 @@ public class SkateController : CharacterController2D
         m_skateboardIterator.MoveNext();
 
         m_currentSkateboard = m_skateboardIterator.Current as Skateboard;
+        m_animator = GetComponent<Animator>();
     }
 
     void Start()
@@ -75,7 +77,10 @@ public class SkateController : CharacterController2D
     public override void Reset()
     {
         transform.position = m_initialPosition;
-        CanControl = true;
+        m_rigidbody.velocity = Vector2.zero;
+
+        m_animator.enabled = true;
+        CanControl = false;
 
         m_skateboardIterator.Reset();
         m_skateboardIterator.MoveNext();
@@ -121,5 +126,18 @@ public class SkateController : CharacterController2D
                 break;
         }
         m_currentSkateboard.PlayAnimation(state);
+    }
+
+    private void OnStartRolling()
+    {
+        DecorManager.Instance.CurrentDecor.ResumeScrolling();
+        m_rigidbody.isKinematic = false;
+        m_animator.enabled = false;
+        CanControl = true;
+    }
+
+    internal void PlayJump()
+    {
+        m_currentSkateboard.PlayAnimation("Jump");
     }
 }

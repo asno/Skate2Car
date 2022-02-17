@@ -29,7 +29,6 @@ public class Game : MonoBehaviour
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
     private BonusManager m_bonusManager;
-    private PropSpawner m_animalPropSpawner;
     private Timer m_timer;
 
     public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
@@ -103,7 +102,7 @@ public class Game : MonoBehaviour
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
         {
             float time = m_cinematicsTime.First<float>();
-            if (time <= m_timer.Time)
+            if (time <= m_timer.Time && !m_timer.IsPaused)
             {
                 m_cinematicsTime.Dequeue();
                 CinematicManager.Instance.StartNextCinematic();
@@ -154,7 +153,10 @@ public class Game : MonoBehaviour
 
     private void InitializeQueues()
     {
-        m_cinematicsTime = new Queue<float>(m_gameSetup.CinematicTimer);
+        List<float> times = new List<float>();
+        times.Add(0);
+        times.AddRange(m_gameSetup.CinematicTimer);
+        m_cinematicsTime = new Queue<float>(times);
         if (m_obstacles != null)
         {
             m_obstaclesQueue = new Queue<Obstacle>(m_obstacles);

@@ -11,6 +11,7 @@ public class SequenceAnimation : AbstractSequence
     public override IEnumerator DoAction()
     {
         m_animator.Play(m_state);
+        yield return null;
         yield return new WaitForSeconds(m_animator.GetCurrentAnimatorStateInfo(0).length);
     }
 }
