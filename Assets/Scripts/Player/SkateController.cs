@@ -56,7 +56,8 @@ public class SkateController : CharacterController2D
 
     public override void GetHitByObstacle()
     {
-        ChangeAnimationState(PlayerAction.Shake);
+        if (CanControl)
+            ChangeAnimationState(PlayerAction.Shake);
     }
 
     public void Upgrade()

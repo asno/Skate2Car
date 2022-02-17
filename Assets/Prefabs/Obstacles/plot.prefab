@@ -142,7 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df636b95a1a017b40ac59891df86f462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_spriteVariations: []
   m_spriteSliceWidthInPixel: 115
   m_isFlat: 0
-  m_penaltyScorePoints: -1500
+  m_penaltyScorePoints: -1000
   m_playerTransform: {fileID: 0}

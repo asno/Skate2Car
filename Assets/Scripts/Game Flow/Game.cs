@@ -99,6 +99,7 @@ public class Game : MonoBehaviour
                 obstacle.StartScrolling();
             }
         }
+
         if (m_cinematicsTime != null && m_cinematicsTime.Count > 0)
         {
             float time = m_cinematicsTime.First<float>();
@@ -141,14 +142,15 @@ public class Game : MonoBehaviour
         InitializeQueues();
         foreach (var o in m_obstacles)
             o.Reset();
-        m_bonusManager = GetComponentInChildren<BonusManager>();
-        m_bonusManager.Reset();
+
         m_characterManager.Reset();
         Score.Instance.Reset();
         DecorManager.Instance.Reset();
         CinematicManager.Instance.Reset();
+        m_bonusManager = DecorManager.Instance.CurrentDecor.GetComponentInChildren<BonusManager>(true);
+        m_bonusManager.Reset();
 
-        m_canRandomizeBonusSpawn = m_bonusManager.enabled;
+        m_canRandomizeBonusSpawn = true;
     }
 
     private void InitializeQueues()
@@ -179,7 +181,8 @@ public class Game : MonoBehaviour
     {
         DecorManager.Instance.PickNextDecor();
         m_characterManager.PickNextCharacterController();
-        m_bonusManager = GetComponentInChildren<BonusManager>();
+        m_bonusManager = DecorManager.Instance.CurrentDecor.GetComponentInChildren<BonusManager>(true);
+        m_bonusManager.Reset();
     }
 
     private void LoadGameSetupFile()
@@ -189,24 +192,6 @@ public class Game : MonoBehaviour
         {
             string setupText = m_configFileTemplate.ToString();
             File.WriteAllText(filePath, setupText);
-
-            //GameSetup gs = new GameSetup();
-            //gs.ScrollingSetup = new ScrollingSetup[]
-            //{
-            //    new ScrollingSetup() {Name = "Sky", Speed = 50.0f},
-            //    new ScrollingSetup() {Name = "City", Speed = 20.0f},
-            //    new ScrollingSetup() {Name = "Grass", Speed = 5.0f},
-            //    new ScrollingSetup() {Name = "Road", Speed = 2.0f}
-            //};
-            //gs.ObstacleSetup = new ObstacleSetup[]
-            //{
-            //    new ObstacleSetup() {Name = "plot", Time = 3.0f, Y = -2.0f},
-            //    new ObstacleSetup() {Name = "cat", Time = 7.0f, Y = -4.0f},
-            //    new ObstacleSetup() {Name = "oil", Time = 11.0f, Y = -1.0f}
-            //};
-            //gs.CinematicTimer = new float[] { 5.5f, 9.5f, 13.5f };
-            //string json = JsonUtility.ToJson(gs);
-            //File.WriteAllText(filePath, json);
         }
         m_gameSetup = FileHandler.ReadFromJSON<GameSetup>(GAME_CONFIG_FILENAME);
 

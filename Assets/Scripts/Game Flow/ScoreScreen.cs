@@ -4,10 +4,12 @@ using UnityEngine.UI;
 
 public class ScoreScreen : Screen
 {
-    private const string MESSAGE = "{0} PTS\n\n{1}";
+    private const string SCORE = "{0} PTS";
 
     [SerializeField]
     private SpriteRenderer m_image;
+    [SerializeField]
+    private Text m_score;
     [SerializeField]
     private Text m_text;
 
@@ -23,6 +25,7 @@ public class ScoreScreen : Screen
     protected override void Deactivate()
     {
         m_image.gameObject.SetActive(false);
+        m_score.gameObject.SetActive(false);
         m_text.gameObject.SetActive(false);
         m_canPressToSkip = false;
     }
@@ -31,6 +34,7 @@ public class ScoreScreen : Screen
     {
         m_isSkipped = false;
         m_image.gameObject.SetActive(true);
+        m_score.gameObject.SetActive(true);
         m_text.gameObject.SetActive(true);
         m_latestScoreupdated = Score.Instance.Points;
         base.Begin();
@@ -54,7 +58,8 @@ public class ScoreScreen : Screen
         if(m_latestScoreupdated != Score.Instance.Points)
         {
             m_latestScoreupdated = Score.Instance.Points;
-            m_text.text = string.Format(MESSAGE, m_latestScoreupdated, Score.Instance.GetMessage());
+            m_text.text = Score.Instance.GetMessage();
+            m_score.text = string.Format(SCORE, m_latestScoreupdated);
         }
         if (m_canPressToSkip)
         {

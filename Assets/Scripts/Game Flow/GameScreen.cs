@@ -10,6 +10,8 @@ public class GameScreen : Screen
     private float m_playTime = 150;
     [SerializeField]
     private Text m_score;
+    [SerializeField]
+    private Cinematic m_endCinematic;
 
     private Score m_scoreInstance;
     private bool m_canReset = true;
@@ -50,14 +52,19 @@ public class GameScreen : Screen
         base.Exit();
         Deactivate();
         m_isSkipped = true;
-        AudioManager.Instance.StopBGM();
     }
 
     public override void DoUpdate()
     {
         m_score.text = string.Format(SCORE, m_scoreInstance.Points);
         if (m_game.Timer.Time >= m_playTime)
-            Exit();
+        {
+            if (m_endCinematic != null && !m_endCinematic.IsPlaying)
+                m_endCinematic.Play(Exit);
+            else if (m_endCinematic == null)
+                Exit();
+            return;
+        }
 
         m_resetButtonTime = Input.GetButton("Fire2") ? m_resetButtonTime + Time.deltaTime : 0;
         if (m_canReset)

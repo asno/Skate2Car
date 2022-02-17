@@ -102,7 +102,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b0b7b11f9776e2e48881b6856c579bec, type: 3}
   m_spriteSliceWidthInPixel: 126
   m_isFlat: 1
-  m_penaltyScorePoints: -1500
+  m_penaltyScorePoints: -1000
   m_playerTransform: {fileID: 0}
 --- !u!60 &1810890539
 PolygonCollider2D:

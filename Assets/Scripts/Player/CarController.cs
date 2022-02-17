@@ -2,9 +2,21 @@ using UnityEngine;
 
 public class CarController : CharacterController2D
 {
+    private Animator m_animator;
+
     public override bool CanMove()
     {
         return true;
+    }
+
+    public override void ChangeAnimationState(PlayerAction aNewPlayerAction)
+    {
+        m_animator.Play(aNewPlayerAction.ToString());
+    }
+
+    public override void GetHitByObstacle()
+    {
+        ChangeAnimationState(PlayerAction.Shake);
     }
 
     protected override void KeepRolling()
@@ -25,6 +37,7 @@ public class CarController : CharacterController2D
 
     void Start()
     {
+        m_animator = GetComponentInChildren<Animator>();
         Reset();
     }
 

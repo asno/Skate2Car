@@ -20,16 +20,6 @@ public class SkateCollision : CharacterCollision
         }
     }
 
-
-    private void OnTriggerEnter2D(Collider2D aCollision)
-    {
-        if(aCollision.CompareTag("Obstacle"))
-        {
-            aCollision.GetComponent<Obstacle>()?.Hit();
-            m_characterController.GetHitByObstacle();
-        }
-    }
-
     void OnBecomingAirborne()
     {
         m_collider.enabled = false;

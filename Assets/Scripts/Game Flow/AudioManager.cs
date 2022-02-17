@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
@@ -6,6 +7,8 @@ public class AudioManager : MonoBehaviour
 
     [SerializeField]
     private bool m_muteAudio = false;
+    [SerializeField]
+    private float m_fadeOutDuration;
     [SerializeField]
     AudioSource m_bgm;
     [SerializeField]
@@ -36,6 +39,25 @@ public class AudioManager : MonoBehaviour
     public void StopBGM()
     {
         m_bgm.Stop();
+    }
+
+    public void FadeOutBGM()
+    {
+        StartCoroutine(FadeOutBGMProcess());
+    }
+
+    private IEnumerator FadeOutBGMProcess()
+    {
+        float startVolume = m_bgm.volume;
+
+        while (m_bgm.volume > 0)
+        {
+            m_bgm.volume -= startVolume * Time.deltaTime / m_fadeOutDuration;
+            yield return new WaitForEndOfFrame();
+        }
+
+        StopBGM();
+        m_bgm.volume = startVolume;
     }
 
     public void PlayMenuCursor()

@@ -14,9 +14,12 @@ public class CharacterCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D aCollision)
     {
-        if (aCollision.CompareTag("Obstacle"))
         {
-            aCollision.GetComponent<Obstacle>()?.Hit();
+            if (aCollision.CompareTag("Obstacle"))
+            {
+                aCollision.GetComponent<Obstacle>()?.Hit();
+                m_characterController.GetHitByObstacle();
+            }
         }
     }
 }

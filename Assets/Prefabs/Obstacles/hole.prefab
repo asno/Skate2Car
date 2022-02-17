@@ -10,7 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3386698558618244375}
   - component: {fileID: 723088853583192228}
-  - component: {fileID: 7148068348729251606}
   - component: {fileID: 5302445263108440969}
   - component: {fileID: 8615994154424750091}
   m_Layer: 0
@@ -85,25 +84,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &7148068348729251606
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4246469356117627628}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 432e4b9f4cd4a64488cc611e41eabb58, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &5302445263108440969
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -116,9 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: df636b95a1a017b40ac59891df86f462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_spriteVariations: []
   m_spriteSliceWidthInPixel: 100
   m_isFlat: 1
-  m_penaltyScorePoints: -2000
+  m_penaltyScorePoints: -1000
   m_playerTransform: {fileID: 0}
 --- !u!61 &8615994154424750091
 BoxCollider2D:

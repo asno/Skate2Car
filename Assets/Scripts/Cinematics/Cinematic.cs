@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
@@ -9,12 +10,12 @@ public class Cinematic : MonoBehaviour
 
     public bool IsPlaying { get => m_isPlaying; }
 
-    public void Play()
+    public void Play(Action aCallback = null)
     {
-        StartCoroutine(PlaySequences());
+        StartCoroutine(PlaySequences(aCallback));
     }
 
-    private IEnumerator PlaySequences()
+    private IEnumerator PlaySequences(Action aCallback)
     {
         m_isPlaying = true;
         var iterator = m_sequences.GetEnumerator();
@@ -29,5 +30,8 @@ public class Cinematic : MonoBehaviour
             isIterating = iterator.MoveNext();
         }
         m_isPlaying = false;
+
+        if (aCallback != null)
+            aCallback();
     }
 }
