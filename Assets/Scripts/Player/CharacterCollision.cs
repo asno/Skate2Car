@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Linq;
+using System.Collections.Generic;
 
 public class CharacterCollision : MonoBehaviour
 {
@@ -9,10 +10,12 @@ public class CharacterCollision : MonoBehaviour
     private Animator[] m_explosions;
 
     protected BoxCollider2D m_collider;
+    private Queue<Animator> m_animatorQueue;
 
     void Start()
     {
         m_collider = GetComponent<BoxCollider2D>();
+        m_animatorQueue = new Queue<Animator>(m_explosions);
     }
 
     private void OnTriggerEnter2D(Collider2D aCollision)
@@ -22,24 +25,13 @@ public class CharacterCollision : MonoBehaviour
             {
                 aCollision.GetComponent<Obstacle>()?.Hit();
                 m_characterController.GetHitByObstacle();
+
+                Vector2 collisionPoint = aCollision.ClosestPoint(m_collider.bounds.center);
+                Animator explosion = m_animatorQueue.Dequeue();
+                explosion.transform.position = collisionPoint;
+                explosion.Play("Strike");
+                m_animatorQueue.Enqueue(explosion);
             }
-        }
-    }
-
-    private void OnCollisionEnter(Collision aCollision)
-    {
-        if (m_explosions != null && m_explosions.Length > 0)
-        {
-            Animator explosion = m_explosions.FirstOrDefault(e => e.GetCurrentAnimatorStateInfo(0).IsName("None"));
-            if (explosion)
-                return;
-
-            ContactPoint contact = aCollision.contacts[0];
-            Quaternion rotation = Quaternion.FromToRotation(Vector3.up, contact.normal);
-            Vector3 position = contact.point;
-            explosion.transform.position = position;
-            explosion.transform.rotation = rotation;
-            explosion.Play("Strike");
         }
     }
 }

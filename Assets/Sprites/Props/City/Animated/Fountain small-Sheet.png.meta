@@ -1,31 +1,19 @@
 fileFormatVersion: 2
-guid: 6c8cf94d16994a349a7801522b104d58
+guid: 5d197b2a152149e4a993203955178138
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 78534691493295972
-    second: Dacia Logo taken-Sheet_0
+      213: 7904318090516313649
+    second: Fountain small-Sheet_0
   - first:
-      213: 1215404488690210228
-    second: Dacia Logo taken-Sheet_1
+      213: -2967722201545229678
+    second: Fountain small-Sheet_1
   - first:
-      213: -7396095425032252712
-    second: Dacia Logo taken-Sheet_2
+      213: -4216467139637085409
+    second: Fountain small-Sheet_2
   - first:
-      213: 3799360871109609039
-    second: Dacia Logo taken-Sheet_3
-  - first:
-      213: -5706811776648953416
-    second: Dacia Logo taken-Sheet_4
-  - first:
-      213: 8281985631981571583
-    second: Dacia Logo taken-Sheet_5
-  - first:
-      213: -443645390350373365
-    second: Dacia Logo taken-Sheet_6
-  - first:
-      213: -4325790757301549977
-    second: Dacia Logo taken-Sheet_7
+      213: 4253994025959989268
+    second: Fountain small-Sheet_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -89,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -101,7 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -113,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 2048
+    maxTextureSize: 512
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -127,169 +115,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_0
+      name: Fountain small-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467b005c2e2071100800000000000000
-      internalID: 78534691493295972
+      spriteID: 1363be8ac67c1bd60800000000000000
+      internalID: 7904318090516313649
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_1
+      name: Fountain small-Sheet_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 34
         y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b59bc661fbfdd010800000000000000
-      internalID: 1215404488690210228
+      spriteID: 29a3bd0a16880d6d0800000000000000
+      internalID: -2967722201545229678
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_2
+      name: Fountain small-Sheet_2
       rect:
         serializedVersion: 2
-        x: 168
+        x: 68
         y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d29f0aa56acb5990800000000000000
-      internalID: -7396095425032252712
+      spriteID: f1bf2dee9791c75c0800000000000000
+      internalID: -4216467139637085409
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_3
+      name: Fountain small-Sheet_3
       rect:
         serializedVersion: 2
-        x: 252
+        x: 102
         y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        width: 34
+        height: 47
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f46c108159a0ab430800000000000000
-      internalID: 3799360871109609039
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_4
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8b1c2d4dce45dc0b0800000000000000
-      internalID: -5706811776648953416
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ffd862d6d068fe270800000000000000
-      internalID: 8281985631981571583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_6
-      rect:
-        serializedVersion: 2
-        x: 504
-        y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0e2de53edad7d9f0800000000000000
-      internalID: -443645390350373365
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Dacia Logo taken-Sheet_7
-      rect:
-        serializedVersion: 2
-        x: 588
-        y: 0
-        width: 84
-        height: 71
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7648f5aa934b7f3c0800000000000000
-      internalID: -4325790757301549977
+      spriteID: 410aaf92709390b30800000000000000
+      internalID: 4253994025959989268
       vertices: []
       indices: 
       edges: []
