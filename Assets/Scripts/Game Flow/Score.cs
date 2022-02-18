@@ -1,5 +1,4 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -20,6 +19,7 @@ public class Score
     private float m_points = 0;
 
     public float Points { get => m_points; }
+    public bool AutoIncrement { get; set; }
     public static Score Instance { get => _instance ??= new Score(); }
 
     private Score()
@@ -29,7 +29,8 @@ public class Score
 
     private void GetPointsForOneTenthSecond()
     {
-        m_points += POINT_PER_TENTH_SECOND;
+        if (AutoIncrement)
+            m_points += POINT_PER_TENTH_SECOND;
     }
 
     public void Reset()

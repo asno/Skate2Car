@@ -4,10 +4,12 @@ using System.IO;
 using System.Collections.Generic;
 using UnityEngine;
 using System.Collections;
+using UnityEngine.Events;
 
 public class Game : MonoBehaviour
 {
     private const string GAME_CONFIG_FILENAME = "gamesetup.json";
+    private const float FREEZE_SCORE_DELAY = 4;
 
     private static Game _instance;
 
@@ -29,7 +31,10 @@ public class Game : MonoBehaviour
     private Queue<float> m_cinematicsTime;
     private GameSetup m_gameSetup;
     private BonusManager m_bonusManager;
+    private Score m_score;
     private Timer m_timer;
+    private float m_idleControlTime;
+    private UnityEvent m_dirtyControlEvent = new UnityEvent();
 
     public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
@@ -51,6 +56,7 @@ public class Game : MonoBehaviour
 
         LoadGameSetupFile();
 
+        m_dirtyControlEvent.AddListener(ResetIdleTime);
         Global.ScrollingSpeed = m_gameSetup.ScrollingSetup.Road;
         DecorManager.Instance.Initialize(m_gameSetup.ScrollingSetup, m_gameSetup.PropSpawnerSetup);
         InitializeQueues();
@@ -69,6 +75,14 @@ public class Game : MonoBehaviour
             return;
 
         m_screen.GetCurrentScreen().DoUpdate();
+
+        if (!m_timer.IsPaused)
+        {
+            m_idleControlTime += Time.deltaTime;
+            m_score.AutoIncrement = m_idleControlTime < FREEZE_SCORE_DELAY;
+            if (!m_score.AutoIncrement && (Input.anyKeyDown || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+                m_dirtyControlEvent.Invoke();
+        }
 
         if (m_canRandomizeBonusSpawn)
         {
@@ -143,8 +157,9 @@ public class Game : MonoBehaviour
         foreach (var o in m_obstacles)
             o.Reset();
 
+        m_score = Score.Instance;
+        m_score.Reset();
         m_characterManager.Reset();
-        Score.Instance.Reset();
         DecorManager.Instance.Reset();
         CinematicManager.Instance.Reset();
         m_bonusManager = DecorManager.Instance.CurrentDecor.GetComponentInChildren<BonusManager>(true);
@@ -201,5 +216,10 @@ public class Game : MonoBehaviour
         Array.Sort(m_gameSetup.CinematicTimer, delegate (float t1, float t2) {
             return t1.CompareTo(t2);
         });
+    }
+
+    private void ResetIdleTime()
+    {
+        m_idleControlTime = 0;
     }
 }
