@@ -13,7 +13,7 @@ public abstract class CharacterController2D : MonoBehaviour
     private int m_backMask;
     private int m_frontMask;
 
-    private bool m_canControl;
+    private bool m_canControl = false;
 
     protected PlayerAction m_currentPlayerAction;
     protected Rigidbody2D m_rigidbody;

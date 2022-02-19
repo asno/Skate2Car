@@ -170,10 +170,10 @@ public class Game : MonoBehaviour
 
     private void InitializeQueues()
     {
-        List<float> times = new List<float>();
-        times.Add(0);
-        times.AddRange(m_gameSetup.CinematicTimer);
-        m_cinematicsTime = new Queue<float>(times);
+        //List<float> times = new List<float>();
+        //times.Add(0);
+        //times.AddRange(m_gameSetup.CinematicTimer);
+        m_cinematicsTime = new Queue<float>(m_gameSetup.CinematicTimer);
         if (m_obstacles != null)
         {
             m_obstaclesQueue = new Queue<Obstacle>(m_obstacles);

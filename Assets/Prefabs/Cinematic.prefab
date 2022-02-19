@@ -310,7 +310,7 @@ MonoBehaviour:
   m_isAsynchronous: 1
   m_actor: {fileID: 881920776}
   m_anchor: {fileID: 742182235}
-  m_speed: 12.54902
+  m_speed: 10.666667
 --- !u!1 &936050461
 GameObject:
   m_ObjectHideFlags: 0
@@ -336,7 +336,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 936050461}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -7.54, y: 2.1, z: 0}
+  m_LocalPosition: {x: -5.52, y: 2.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 881920777}
@@ -1968,7 +1968,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044224532242268687}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1999,7 +1999,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_cinematics:
-  - {fileID: 4426351470493439277}
   - {fileID: 1044224530745594275}
   - {fileID: 1044224530939118544}
   - {fileID: 1044224530924786307}
@@ -2825,7 +2824,7 @@ MonoBehaviour:
   m_isAsynchronous: 1
   m_actor: {fileID: 0}
   m_anchor: {fileID: 5439215505466688865}
-  m_speed: 12.54902
+  m_speed: 10.666667
 --- !u!1 &5439215506317653105
 GameObject:
   m_ObjectHideFlags: 0
@@ -3268,7 +3267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5e112f3f90f43478a1de59e473cb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isAsynchronous: 1
+  m_isAsynchronous: 0
   m_animator: {fileID: 0}
   m_state: Grow2Big
 --- !u!1 &5795155090361974499
@@ -3319,7 +3318,7 @@ MonoBehaviour:
   m_isAsynchronous: 0
   m_actor: {fileID: 5795155090361974499}
   m_anchor: {fileID: 3337545264778190905}
-  m_speed: 12.54902
+  m_speed: 10.666667
 --- !u!1 &5795155090453091936
 GameObject:
   m_ObjectHideFlags: 0
@@ -3545,7 +3544,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5e112f3f90f43478a1de59e473cb18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_isAsynchronous: 1
+  m_isAsynchronous: 0
   m_animator: {fileID: 0}
   m_state: Grow2Medium
 --- !u!1 &5795155090894657088
@@ -4262,7 +4261,7 @@ MonoBehaviour:
   m_isAsynchronous: 1
   m_actor: {fileID: 0}
   m_anchor: {fileID: 8640421438547608390}
-  m_speed: 12.54902
+  m_speed: 10.666667
 --- !u!1 &8979095244706628097
 GameObject:
   m_ObjectHideFlags: 0

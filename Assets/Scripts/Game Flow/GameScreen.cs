@@ -7,7 +7,7 @@ public class GameScreen : Screen
     private const string SCORE = "Score: {0}";
 
     [SerializeField]
-    private float m_playTime = 150;
+    private float m_playTime = 120;
     [SerializeField]
     private Text m_score;
     [SerializeField]
@@ -60,7 +60,10 @@ public class GameScreen : Screen
         if (m_game.Timer.Time >= m_playTime)
         {
             if (m_endCinematic != null && !m_endCinematic.IsPlaying)
+            {
+                m_game.StopGame();
                 m_endCinematic.Play(Exit);
+            }
             else if (m_endCinematic == null)
                 Exit();
             return;
