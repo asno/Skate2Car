@@ -13,7 +13,7 @@ public class ScoreScreen : Screen
     [SerializeField]
     private Text m_text;
 
-    private float m_latestScoreupdated;
+    private int m_latestScoreupdated;
     private bool m_canPressToSkip;
 
     public override void Initialize()
@@ -36,7 +36,7 @@ public class ScoreScreen : Screen
         m_image.gameObject.SetActive(true);
         m_score.gameObject.SetActive(true);
         m_text.gameObject.SetActive(true);
-        m_latestScoreupdated = Score.Instance.Points;
+        m_latestScoreupdated = -1;
         base.Begin();
 
         Invoke(nameof(EnablePressToSkip), 2f);

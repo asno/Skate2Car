@@ -83,7 +83,7 @@ public class Prop : MonoBehaviour
 
         if (m_isScrolling)
         {
-            var horizontalMove = Time.deltaTime * m_scrollingSpeed * m_scrollWidth;
+            var horizontalMove = Time.deltaTime * m_scrollingSpeed * (m_scrollWidth * (1 / 1.173333f));
             var pos = transform.position;
             pos.x -= horizontalMove;
             transform.position = pos;

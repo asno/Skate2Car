@@ -54,6 +54,11 @@ public class SkateController : CharacterController2D
         ChangeAnimationState(PlayerAction.MoveDown);
     }
 
+    public override bool HasPerformedAction()
+    {
+        return Input.GetButtonDown("Fire1") || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0;
+    }
+
     public override void GetHitByObstacle()
     {
         if (CanControl)

@@ -35,6 +35,11 @@ public class CarController : CharacterController2D
     {
     }
 
+    public override bool HasPerformedAction()
+    {
+        return Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0;
+    }
+
     void Start()
     {
         m_animator = GetComponentInChildren<Animator>();

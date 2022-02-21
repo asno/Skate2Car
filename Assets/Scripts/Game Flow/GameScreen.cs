@@ -61,8 +61,8 @@ public class GameScreen : Screen
         {
             if (m_endCinematic != null && !m_endCinematic.IsPlaying)
             {
-                m_game.StopGame();
                 m_endCinematic.Play(Exit);
+                m_game.StopGame();
             }
             else if (m_endCinematic == null)
                 Exit();

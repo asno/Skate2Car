@@ -16,9 +16,9 @@ public class Score
         { new Tuple<int, int>(130001, MAX_POINTS), "VOUS AVEZ TRES BIEN NAVIGUER ENTRE LES OBSTACLES.\nBRAVO." }
     };
 
-    private float m_points = 0;
+    private int m_points = 0;
 
-    public float Points { get => m_points; }
+    public int Points { get => m_points; }
     public bool AutoIncrement { get; set; }
     public static Score Instance { get => _instance ??= new Score(); }
 

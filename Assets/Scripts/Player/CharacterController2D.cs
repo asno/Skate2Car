@@ -26,6 +26,7 @@ public abstract class CharacterController2D : MonoBehaviour
     protected abstract void KeepRolling();
     protected abstract void SteerUpwards();
     protected abstract void SteerDownards();
+    public abstract bool HasPerformedAction();
 
     public virtual void Reset()
     {
@@ -34,7 +35,6 @@ public abstract class CharacterController2D : MonoBehaviour
     public virtual void ChangeAnimationState(PlayerAction aNewPlayerAction)
     {
     }
-
 
     public virtual void GetHitByObstacle()
     {

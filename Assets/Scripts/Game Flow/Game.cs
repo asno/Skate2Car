@@ -80,7 +80,7 @@ public class Game : MonoBehaviour
         {
             m_idleControlTime += Time.deltaTime;
             m_score.AutoIncrement = m_idleControlTime < FREEZE_SCORE_DELAY;
-            if (!m_score.AutoIncrement && (Input.anyKeyDown || Input.GetAxis("Horizontal") != 0 || Input.GetAxis("Vertical") != 0))
+            if (!m_score.AutoIncrement && m_characterManager.CurrentCharacterController.HasPerformedAction())
                 m_dirtyControlEvent.Invoke();
         }
 
@@ -170,9 +170,6 @@ public class Game : MonoBehaviour
 
     private void InitializeQueues()
     {
-        //List<float> times = new List<float>();
-        //times.Add(0);
-        //times.AddRange(m_gameSetup.CinematicTimer);
         m_cinematicsTime = new Queue<float>(m_gameSetup.CinematicTimer);
         if (m_obstacles != null)
         {
@@ -186,9 +183,10 @@ public class Game : MonoBehaviour
     {
         DecorManager.Instance.CurrentDecor.PauseScrolling();
         DecorManager.Instance.gameObject.SetActive(false);
-        CinematicManager.Instance.gameObject.SetActive(false);
         CharacterController.CanControl = false;
         CharacterController.gameObject.SetActive(false);
+        foreach (var o in m_obstacles)
+            o.Reset();
         m_timer.Restart(false);
     }
 

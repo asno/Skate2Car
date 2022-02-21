@@ -18,6 +18,7 @@ public class Obstacle : MonoBehaviour
     private Collider2D m_collider;
     private Animator m_animator;
     private float m_colliderBottomY;
+    private float m_scrollingSpeed;
     private float m_scrollWidth;
     private float m_spriteSliceWidthInUUnit;
     private float m_screenLeft;
@@ -41,6 +42,7 @@ public class Obstacle : MonoBehaviour
         m_scrollWidth = Global.ScreenWidthInUUnit;
         m_spriteSliceWidthInUUnit = m_spriteSliceWidthInPixel / 33f;
         m_screenLeft = Global.ScreenLeft;
+        m_scrollingSpeed = 1 / Global.ScrollingSpeed;
     }
 
     internal void Hit()
@@ -61,7 +63,7 @@ public class Obstacle : MonoBehaviour
 
         if (m_isScrolling)
         {
-            var horizontalMove = (Time.deltaTime * (1 / Global.ScrollingSpeed)) * (m_scrollWidth - m_spriteSliceWidthInUUnit);
+            var horizontalMove = Time.deltaTime * m_scrollingSpeed * (m_scrollWidth * (1 / 1.173333f));
             var pos = transform.position;
             pos.x -= horizontalMove;
             transform.position = pos;
