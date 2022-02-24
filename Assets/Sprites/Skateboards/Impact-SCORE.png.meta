@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: dc6a5a37733bedd44b07b9d587cfe821
+guid: 8def6f38bf82b484d9d0fe288a3e65aa
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5466565798526828280
-    second: Impact-Sheet_0
+      213: 4083662605826703923
+    second: Impact-SCORE_0
   - first:
-      213: 7647460065544114491
-    second: Impact-Sheet_1
+      213: -7634783452951090925
+    second: Impact-SCORE_1
   - first:
-      213: 2859606600489653614
-    second: Impact-Sheet_2
+      213: 590590190574099257
+    second: Impact-SCORE_2
   - first:
-      213: 5292957567151656257
-    second: Impact-Sheet_3
-  - first:
-      213: 5023279658717668118
-    second: Impact-Sheet_4
-  - first:
-      213: -3037109973695982876
-    second: Impact-Sheet_5
+      213: -4269427388247552102
+    second: Impact-SCORE_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -83,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -95,7 +89,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -107,7 +101,7 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Android
-    maxTextureSize: 1024
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -121,127 +115,85 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Impact-Sheet_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 801428d8e5bd224b0800000000000000
-      internalID: -5466565798526828280
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Impact-Sheet_1
+      name: Impact-SCORE_0
       rect:
         serializedVersion: 2
         x: 84
         y: 0
         width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b311eb0696c312a60800000000000000
-      internalID: 7647460065544114491
+      spriteID: 332c8daf0851ca830800000000000000
+      internalID: 4083662605826703923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Impact-Sheet_2
+      name: Impact-SCORE_1
       rect:
         serializedVersion: 2
         x: 168
         y: 0
         width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e655c836d0d5fa720800000000000000
-      internalID: 2859606600489653614
+      spriteID: 319e1dd76eccb0690800000000000000
+      internalID: -7634783452951090925
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Impact-Sheet_3
+      name: Impact-SCORE_2
       rect:
         serializedVersion: 2
         x: 252
         y: 0
         width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14d4a413ddc547940800000000000000
-      internalID: 5292957567151656257
+      spriteID: 93bdff436a2323800800000000000000
+      internalID: 590590190574099257
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Impact-Sheet_4
+      name: Impact-SCORE_3
       rect:
         serializedVersion: 2
         x: 336
         y: 0
         width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 613ef413c3646b540800000000000000
-      internalID: 5023279658717668118
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Impact-Sheet_5
-      rect:
-        serializedVersion: 2
-        x: 420
-        y: 0
-        width: 84
-        height: 54
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4e21e0af1940ad5d0800000000000000
-      internalID: -3037109973695982876
+      spriteID: a9f4e292962ffb4c0800000000000000
+      internalID: -4269427388247552102
       vertices: []
       indices: 
       edges: []

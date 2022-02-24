@@ -142,11 +142,14 @@ public class Game : MonoBehaviour
     void OnApplicationFocus(bool hasFocus)
     {
         m_isPaused = !hasFocus;
+        m_timer.Resume();
     }
 
     void OnApplicationPause(bool pauseStatus)
     {
         m_isPaused = pauseStatus;
+        if (m_isPaused)
+            m_timer.Pause();
     }
 
     public void Reset()
@@ -200,13 +203,14 @@ public class Game : MonoBehaviour
 
     private void LoadGameSetupFile()
     {
-        string filePath = Path.Combine(Application.persistentDataPath, GAME_CONFIG_FILENAME);
-        if (!File.Exists(filePath))
-        {
-            string setupText = m_configFileTemplate.ToString();
-            File.WriteAllText(filePath, setupText);
-        }
-        m_gameSetup = FileHandler.ReadFromJSON<GameSetup>(GAME_CONFIG_FILENAME);
+        //string filePath = Path.Combine(Application.persistentDataPath, GAME_CONFIG_FILENAME);
+        //if (!File.Exists(filePath))
+        //{
+        //    string setupText = m_configFileTemplate.ToString();
+        //    File.WriteAllText(filePath, setupText);
+        //}
+        //m_gameSetup = FileHandler.ReadFromJSON<GameSetup>(GAME_CONFIG_FILENAME);
+        m_gameSetup = JsonUtility.FromJson<GameSetup>(m_configFileTemplate.text);
 
         Array.Sort(m_gameSetup.ObstacleSetup, delegate (ObstacleSetup o1, ObstacleSetup o2) {
             return o1.Time.CompareTo(o2.Time);

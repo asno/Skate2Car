@@ -98,6 +98,7 @@ MonoBehaviour:
   m_spriteVariations:
   - {fileID: 6924677636275385205, guid: 7662bc6ae41005d4882192372d8ffbbc, type: 3}
   - {fileID: -4264146689313567973, guid: 0ae22a4739620f9468f93969ec56c873, type: 3}
+  - {fileID: -3201436308799998998, guid: 522c6d15d5267b7449df7169da645fda, type: 3}
   m_spawnPoints:
   - m_pathToSceneGameObject: trees
     m_point: {fileID: 0}

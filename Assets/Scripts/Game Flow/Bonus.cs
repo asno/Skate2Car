@@ -71,5 +71,6 @@ public class Bonus : MonoBehaviour
     void OnPopComplete()
     {
         m_isPopComplete = true;
+        m_animator.Play("None");
     }
 }

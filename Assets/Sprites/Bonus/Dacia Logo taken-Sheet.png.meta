@@ -26,6 +26,9 @@ TextureImporter:
   - first:
       213: -4325790757301549977
     second: Dacia Logo taken-Sheet_7
+  - first:
+      213: -1523691586805318532
+    second: Dacia Logo taken-Sheet_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -132,8 +135,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,10 +154,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_1
       rect:
         serializedVersion: 2
-        x: 84
+        x: 130
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -172,10 +175,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_2
       rect:
         serializedVersion: 2
-        x: 168
+        x: 260
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,10 +196,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_3
       rect:
         serializedVersion: 2
-        x: 252
+        x: 390
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -214,10 +217,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_4
       rect:
         serializedVersion: 2
-        x: 336
+        x: 520
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -235,10 +238,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_5
       rect:
         serializedVersion: 2
-        x: 420
+        x: 650
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -256,10 +259,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_6
       rect:
         serializedVersion: 2
-        x: 504
+        x: 780
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -277,10 +280,10 @@ TextureImporter:
       name: Dacia Logo taken-Sheet_7
       rect:
         serializedVersion: 2
-        x: 588
+        x: 910
         y: 0
-        width: 84
-        height: 71
+        width: 130
+        height: 93
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -290,6 +293,27 @@ TextureImporter:
       bones: []
       spriteID: 7648f5aa934b7f3c0800000000000000
       internalID: -4325790757301549977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Dacia Logo taken-Sheet_8
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 0
+        width: 130
+        height: 93
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7cb73d1392cadae0800000000000000
+      internalID: -1523691586805318532
       vertices: []
       indices: 
       edges: []
