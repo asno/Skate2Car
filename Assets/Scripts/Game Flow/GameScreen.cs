@@ -7,8 +7,6 @@ public class GameScreen : Screen
     private const string SCORE = "Score: {0}";
 
     [SerializeField]
-    private float m_playTime = 120;
-    [SerializeField]
     private RawImage m_scoreBackground;
     [SerializeField]
     private Text m_score;
@@ -59,7 +57,7 @@ public class GameScreen : Screen
     public override void DoUpdate()
     {
         m_score.text = string.Format(SCORE, m_scoreInstance.Points);
-        if (m_game.Timer.Time >= m_playTime)
+        if (m_game.Timer.Time >= m_game.PlayTime)
         {
             if (m_endCinematic != null && !m_endCinematic.IsPlaying)
                 m_endCinematic.Play(Exit);

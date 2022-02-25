@@ -5797,7 +5797,6 @@ MonoBehaviour:
   m_nextScreen: {fileID: 1155587030}
   m_fallbackScreen: {fileID: 0}
   m_timeOut: 0
-  m_playTime: 105
   m_scoreBackground: {fileID: 287820794}
   m_score: {fileID: 1627212565}
   m_endCinematic: {fileID: 5795155091228318036}
@@ -16917,6 +16916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_configFileTemplate: {fileID: 4900000, guid: 3530dabd5c7763948b481c688faf2993, type: 3}
   m_targetFrameRate: 60
+  m_playTime: 105
   m_screen: {fileID: 265904113}
 --- !u!114 &1680292298
 MonoBehaviour:

@@ -10,6 +10,7 @@ public class Game : MonoBehaviour
 {
     private const string GAME_CONFIG_FILENAME = "gamesetup.json";
     private const float FREEZE_SCORE_DELAY = 4;
+    private const int BONUS_SPAWN_PER_GAME = 10;
 
     private static Game _instance;
 
@@ -17,12 +18,15 @@ public class Game : MonoBehaviour
     private TextAsset m_configFileTemplate;
     [SerializeField]
     private int m_targetFrameRate = 60;
+    [SerializeField]
+    private float m_playTime;
     [LabelOverride("First Screen")]
     [SerializeField]
     private Screen m_screen;
 
     private bool m_isPaused;
     private bool m_canRandomizeBonusSpawn;
+    private int m_bonusSpawnCount;
     private CharacterManager m_characterManager;
     private Obstacle[] m_obstacles;
     private Queue<Obstacle> m_obstaclesQueue;
@@ -39,6 +43,7 @@ public class Game : MonoBehaviour
     public static Game Instance { get => _instance ??= FindObjectOfType<Game>(); }
     public CharacterController2D CharacterController { get => m_characterManager.CurrentCharacterController; }
     public Timer @Timer { get => m_timer; }
+    public float PlayTime { get => m_playTime; }
 
     void Awake()
     {
@@ -87,7 +92,7 @@ public class Game : MonoBehaviour
         if (m_canRandomizeBonusSpawn)
         {
             m_canRandomizeBonusSpawn = false;
-            float spawnTime = UnityEngine.Random.Range(0.5f, 5.5f);
+            float spawnTime = UnityEngine.Random.Range(m_playTime / BONUS_SPAWN_PER_GAME * 0.9f, m_playTime / BONUS_SPAWN_PER_GAME);
             StartCoroutine(SpawnBonus(spawnTime));
         }
 
@@ -132,10 +137,11 @@ public class Game : MonoBehaviour
         {
             yield return null;
         }
-        if (m_bonusManager.enabled)
+        if (m_bonusManager.enabled && m_bonusSpawnCount < BONUS_SPAWN_PER_GAME)
         {
             m_bonusManager.SpawnBonus();
             m_canRandomizeBonusSpawn = true;
+            m_bonusSpawnCount++;
         }
     }
 
@@ -169,6 +175,7 @@ public class Game : MonoBehaviour
         m_bonusManager.Reset();
 
         m_canRandomizeBonusSpawn = true;
+        m_bonusSpawnCount = 0;
     }
 
     private void InitializeQueues()
