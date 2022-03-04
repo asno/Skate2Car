@@ -1,1 +1,38 @@
-{"ScrollingSetup":[{"Name":"Sky","Speed":50.0},{"Name":"City","Speed":20.0},{"Name":"Grass","Speed":5.0},{"Name":"Road","Speed":2.0}],"ObstacleSetup":[{"Time":3.0,"Name":"plot","Y":-2.0},{"Time":7.0,"Name":"cat","Y":-4.0},{"Time":11.0,"Name":"oil","Y":-1.0}],"CinematicTimer":[5.5,9.5,13.5]}
+{"ScrollingSetup":
+{"Sky":50.0,"Backdrop":20.0,"Border":5.0,"Road":2.0},"PropSpawnerSetup":[{"Stage":"City","RandomMin":0.0,"RandomMax":1.0, "ArrayOfProps":[
+{"Prop":{"Prefab":"sign","Weight":0.2},"Instances":0},{"Prop":
+{"Prefab":"crosswalk","Weight":0.1},"Instances":1},{"Prop":
+{"Prefab":"light","Weight":0.3},"Instances":2},{"Prop":
+{"Prefab":"hydrant","Weight":0.2},"Instances":2},{"Prop":
+{"Prefab":"trees","Weight":0.7},"Instances":4},{"Prop":
+{"Prefab":"pedestrian_0","Weight":0.3},"Instances":1},{"Prop":
+{"Prefab":"pedestrian_1","Weight":0.3},"Instances":1},{"Prop":
+{"Prefab":"pedestrian_2","Weight":0.3},"Instances":1},{"Prop":
+{"Prefab":"pedestrian_3","Weight":0.3},"Instances":1},{"Prop":
+{"Prefab":"pedestrian_4","Weight":0.3},"Instances":1}]},
+{"Stage":"Countryside","RandomMin":4.0,"RandomMax":10.0, "ArrayOfProps":[
+{"Prop":{"Prefab":"fox","Weight":0.5},"Instances":1},{"Prop":
+{"Prefab":"deer","Weight":0.5},"Instances":1},{"Prop":
+{"Prefab":"rabbit","Weight":0.5},"Instances":1}]},
+{"Stage":"Countryside","RandomMin":0.0,"RandomMax":1.0, "ArrayOfProps":[
+{"Prop":{"Prefab":"rock","Weight":0.2},"Instances":2},{"Prop":
+{"Prefab":"tree","Weight":0.7},"Instances":5}]}],"ObstacleSetup":[{"Time":3.1,"Name":"bump","Y":-2.0},
+{"Time":4.1,"Name":"cat","Y":-2.0},
+{"Time":5.1,"Name":"bump","Y":-2.0},
+{"Time":5.2,"Name":"bump","Y":-4.0},{"Time":5.6,"Name":"can","Y":-3.0},{"Time":6.6,"Name":"bump","Y":-2.0},{"Time":7.1,"Name":"can","Y":-3.0},{"Time":7.6,"Name":"oil","Y":-2.1},{"Time":8.1,"Name":"hole","Y":-4.0},{"Time":8.6,"Name":"plot","Y":-2.0},{"Time":9.5,"Name":"hole","Y":-5.0},{"Time":10.6,"Name":"bump","Y":-4.0},{"Time":10.7,"Name":"bump","Y":-2.0},{"Time":12.1,"Name":"bump","Y":-4.0},{"Time":12.2,"Name":"bump","Y":-2.0},{"Time":13.6,"Name":"bump","Y":-4.0},
+{"Time":13.7,"Name":"bump","Y":-2.0},
+{"Time":15.6,"Name":"plot","Y":-3.0},{"Time":16.1,"Name":"plot","Y":-3.5},{"Time":16.6,"Name":"plot","Y":-4.0},{"Time":17.1,"Name":"plot","Y":-4.5},{"Time":18.6,"Name":"can","Y":-2.0},{"Time":19.1,"Name":"hole","Y":-4.1},{"Time":20.6,"Name":"bump","Y":-4.0},{"Time":21.1,"Name":"bump","Y":-4.0},
+{"Time":21.2,"Name":"bump","Y":-2.0},{"Time":21.6,"Name":"bump","Y":-4.0},{"Time":21.9,"Name":"water","Y":-4.1},
+{"Time":23.6,"Name":"plot","Y":-2.1},{"Time":24.6,"Name":"dog","Y":-3.0},{"Time":25.1,"Name":"plot","Y":-5.1},{"Time":25.6,"Name":"plot","Y":-3.0},{"Time":27.1,"Name":"can","Y":-2.1},{"Time":27.6,"Name":"hole","Y":-5.1},{"Time":30.1,"Name":"oil","Y":-4.0},{"Time":30.2,"Name":"water","Y":-2.1},{"Time":31.1,"Name":"plot","Y":-3.0},{"Time":31.6,"Name":"water","Y":-4.1},{"Time":33.1,"Name":"can","Y":-5.1},{"Time":34.6,"Name":"hole","Y":-4.0},{"Time":35.6,"Name":"oil","Y":-4.5},{"Time":35.7,"Name":"bump","Y":-2.0},{"Time":36.1,"Name":"can","Y":-2.0},
+{"Time":36.2,"Name":"can","Y":-5.0},{"Time":36.6,"Name":"plot","Y":-2.0},{"Time":36.7,"Name":"plot","Y":-5.0},{"Time":37.1,"Name":"plot","Y":-2.5},{"Time":37.2,"Name":"plot","Y":-4.5},
+{"Time":37.6,"Name":"plot","Y":-2.5},{"Time":37.7,"Name":"plot","Y":-4.5},{"Time":38.1,"Name":"plot","Y":-3.0},{"Time":38.2,"Name":"plot","Y":-4.0},{"Time":38.6,"Name":"can","Y":-3.0},
+{"Time":38.7,"Name":"can","Y":-4.0},
+{"Time":40.4,"Name":"bump","Y":-2.0},
+{"Time":40.5,"Name":"bump","Y":-4.0},
+{"Time":41.6,"Name":"hole","Y":-3.1},
+{"Time":42.6,"Name":"hole","Y":-2.1},{"Time":43.6,"Name":"oil","Y":-4.1},
+{"Time":43.7,"Name":"oil","Y":-2.1},{"Time":45.6,"Name":"plot","Y":-5.1},{"Time":46.1,"Name":"can","Y":-3.0},{"Time":46.6,"Name":"bump","Y":-4.0},{"Time":47.1,"Name":"plot","Y":-2.1},{"Time":47.6,"Name":"oil","Y":-4.0},{"Time":48.1,"Name":"plot","Y":-3.0},{"Time":48.6,"Name":"water","Y":-3.0},{"Time":49.1,"Name":"can","Y":-2.1},{"Time":49.6,"Name":"can","Y":-4.0},{"Time":50.1,"Name":"bump","Y":-2.0},{"Time":50.2,"Name":"bump","Y":-4.0},{"Time":52.1,"Name":"bump","Y":-2.0},{"Time":52.2,"Name":"bump","Y":-4.0},{"Time":54.1,"Name":"bump","Y":-2.0},{"Time":54.2,"Name":"bump","Y":-4.0},{"Time":55.6,"Name":"bump","Y":-3.1},{"Time":56.1,"Name":"hole","Y":-2.0},{"Time":56.6,"Name":"oil","Y":-5.1},{"Time":57.1,"Name":"water","Y":-4.1},{"Time":57.6,"Name":"plot","Y":-2.0},{"Time":58.1,"Name":"can","Y":-2.1},{"Time":60.6,"Name":"bump","Y":-4.0},{"Time":62.1,"Name":"bump","Y":-4.1},
+{"Time":62.2,"Name":"bump","Y":-2.1},{"Time":63.1,"Name":"hole","Y":-5.1},{"Time":63.6,"Name":"hole","Y":-4.1},{"Time":64.1,"Name":"cat","Y":-2.0},{"Time":64.6,"Name":"oil","Y":-3.0},{"Time":66.1,"Name":"bump","Y":-3.0},{"Time":67.6,"Name":"plot","Y":-5.1},{"Time":68.1,"Name":"can","Y":-5.1},{"Time":69.1,"Name":"plot","Y":-4.1},{"Time":69.6,"Name":"oil","Y":-2.1},{"Time":70.1,"Name":"can","Y":-3.0},{"Time":71.6,"Name":"bump","Y":-4.0},{"Time":72.6,"Name":"plot","Y":-2.1},{"Time":73.1,"Name":"plot","Y":-3.0},{"Time":73.6,"Name":"can","Y":-4.1},{"Time":74.1,"Name":"oil","Y":-4.0},{"Time":74.6,"Name":"water","Y":-3.1},{"Time":76.1,"Name":"bump","Y":-3.0},{"Time":76.6,"Name":"plot","Y":-2.0},{"Time":77.1,"Name":"hole","Y":-5.0},{"Time":77.6,"Name":"plot","Y":-3.0},{"Time":78.1,"Name":"oil","Y":-4.1},{"Time":80.6,"Name":"can","Y":-4.0},{"Time":81.1,"Name":"plot","Y":-2.0},{"Time":81.6,"Name":"plot","Y":-5.1},{"Time":82.1,"Name":"bump","Y":-4.0},
+{"Time":82.2,"Name":"bump","Y":-2.0},{"Time":84.1,"Name":"bump","Y":-4.0},{"Time":84.2,"Name":"bump","Y":-2.0},
+{"Time":87.5,"Name":"leaves","Y":-2.1},{"Time":89.0,"Name":"crack","Y":-4.0},{"Time":90.5,"Name":"water","Y":-2.1},{"Time":92.0,"Name":"leaves","Y":-4.0},{"Time":93.6,"Name":"crack","Y":-4.1},{"Time":94.6,"Name":"branch","Y":-4.1},{"Time":96.1,"Name":"branch","Y":-2.0},{"Time":96.5,"Name":"leaves","Y":-3.1},{"Time":98.1,"Name":"sand","Y":-2.0},{"Time":99.5,"Name":"leaves","Y":-4.1},{"Time":101.8,"Name":"branch","Y":-4.0},{"Time":103.2,"Name":"sand","Y":-2.0},{"Time":103.8,"Name":"leaves","Y":-2.2}],
+"CinematicTimer":[15.5,29.5,45.5,60.5,72.1,86.0]}
