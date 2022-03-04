@@ -11,9 +11,9 @@ public class Score
     private const int MAX_POINTS = int.MaxValue;
     private readonly Dictionary<Tuple<int, int>, string> SCORE_TO_MSG_MAPPING = new Dictionary<Tuple<int, int>, string>()
     {
-        { new Tuple<int, int>(MIN_POINTS, 14999), "Vous pouvez encore vous améliorer !" },
-        { new Tuple<int, int>(15000, 85000), "Bien joué, vous êtes sur la bonne voie !" },
-        { new Tuple<int, int>(85001, MAX_POINTS), "Vous êtes aussi à l’aise sur un longboard qu’avec le nouveau Dacia Jogger, bravo !" }
+        { new Tuple<int, int>(MIN_POINTS, 14999), "VOUS POUVEZ ENCORE\nVOUS AMÉLIORER !" },
+        { new Tuple<int, int>(15000, 85000), "BIEN JOUÉ, VOUS ÊTES\nSUR LA BONNE VOIE !" },
+        { new Tuple<int, int>(85001, MAX_POINTS), "VOUS ÊTES AUSSI À L'AISE SUR UN LONGBOARD QU'AVEC LE NOUVEAU DACIA JOGGER,\nBRAVO!" }
     };
 
     private int m_points = 0;
